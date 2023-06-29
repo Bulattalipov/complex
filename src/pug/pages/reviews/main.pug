@@ -1,0 +1,32 @@
+.top-offset
++breadcrumbs([["Главная", "./"], ["Партнеры", "./"], ["Hels"]])
+main.page-main.main
+  section.section.page-tab-parent
+    .site-container
+      h2.page-heading-h2
+        | Сертификаты и отзывы
+
+      .reviews-btns
+        button.button.page-tab-btn(data-tab-name="r") Отзывы
+        button.button.page-tab-btn(data-tab-name="s") Сертификаты
+
+      .reviews-content.page-tab-content.is-active(data-tab-content="r")
+        ul.reviews-list
+          li.reviews-item
+            p
+              | "Комплексное оснащение" всегда старается выйти на официального представителя, либо производителя, чтобы быть уверенным, что клиент получит продукт качественный и сертифицированный. Благодаря такой схеме работы, Вы можете быть спокойны - все налоги и пошлины уплачены, а товар оригинален.
+              | Ниже приведены сертификаты и официальные подтверждения о наших партнёрских, дилерских и дистрибьюторских отношениях.
+
+
+      .reviews-content.page-tab-content(data-tab-content="s")
+        ul.reviews-cards
+          each i in Array.from(Array(3).keys())
+            li.reviews-card
+              img(src="assets/images/werqwe.jpg" alt="")
+              h4 YILMAZ REDUKTOR
+              p
+                | Турецкий производитель мотор-редукторов и редукторов Авторизованный продавец
+
+
+
+  include ../../parts/feedback.pug

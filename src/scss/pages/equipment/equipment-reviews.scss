@@ -1,0 +1,96 @@
+.equipment-reviews {
+    display: flex;
+    margin-bottom: 4.5rem;
+
+    @include mq(sm) {
+        flex-direction: column; 
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        max-width: 40rem;
+
+        @include mq(xl) {
+            margin-right: 2rem;
+            max-width: 30rem;
+        }
+
+        @include mq(sm) {
+            margin-right: 0;
+            margin-bottom: 4rem;
+            max-width: 100%;
+        }
+    }
+
+    &__user-img {
+        flex-shrink: 0;
+        width: 25.6rem;
+        height: 25.6rem;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 3rem;
+
+        @include mq(xl) {
+            width: 14.8rem;
+            height: 14.8rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__user-name {
+        font: 500 3.2rem/2.4rem var(--main-ff);
+        margin-bottom: 2rem;
+
+        @include mq(xl) {
+            font: 500 2rem/1.1 var(--main-ff);
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__user-post,
+    &__user-phone,
+    &__user-email {
+        font: 400 2.2rem/1.1 var(--main-ff);
+        margin-bottom: 1rem;
+
+        @include mq(xl) {
+            font: 400 1.6rem/1.1 var(--main-ff);
+        }
+    }
+
+    &__user-phone,
+    &__user-email {
+        text-decoration: underline;
+    }
+
+    &__blockquote {
+        position: relative;
+        font: 400 3.6rem/1.1 var(--main-ff);
+
+        @include mq(xl) {
+            font: 400 2.4rem/1.1 var(--main-ff);
+        }
+
+        &::before {
+            position: absolute;
+            top: -6.4rem;
+            right: 0;
+            width: 8.4rem;
+            height: 8.1rem;
+            background-image: url("../images/equipment/quotes.svg");
+            background-size: cover;
+            content: '';
+
+            @include mq(xl) {
+                width: 5.1rem;
+                height: 4.8rem;
+            }
+
+            @include mq(sm) {
+                top: -4.7rem;
+            }
+        }
+    }
+}

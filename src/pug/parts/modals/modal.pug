@@ -1,0 +1,155 @@
+.modal__container(data-target="modal" )
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__legend
+      | Оставить заявку
+
+    form.form.form--modal(action="" data-need-validation enctype="multipart/form-data")
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="name" required placeholder="Имя")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Имя
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="email" class="input" name="email" data-parsley-email required placeholder="Email")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Email
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="phone" required placeholder="8-(800)-707-57-05")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Контактный телефон
+
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="inn" required placeholder="Имя")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label ИНН Организации
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="question" required placeholder="Опишите запрос")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Опишите запрос
+
+      label.file.js-file-upload(data-text="Прикрепить файл до 5Мб")
+        input(type="file" class="visually-hidden" name="file")
+        span(class="js-file-upload-text") Прикрепить файл #[span(class="color ") до 5Мб]
+
+
+      button.button.button--accent.form__btn.form__btn--nomt Отправить
+
+      p.form__agreeemnt
+        | *нажимая отправить, вы соглашаетесь с #[a(href="/") условиями обработки персональных данных]
+
+
+.modal__container(data-target="modal-product")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__legend
+      | Оставить заявку
+
+    form.form.form--modal(action="" data-need-validation enctype="multipart/form-data")
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="name" required placeholder="Имя")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Имя
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="email" class="input" name="email" data-parsley-email required placeholder="Email")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Email
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="phone" required placeholder="8-(800)-707-57-05")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Контактный телефон
+
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="inn" required placeholder="Имя")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label ИНН Организации
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="question" required placeholder="Комментарий")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Комментарий
+
+      label.file.js-file-upload(data-text="Прикрепить файл до 5Мб")
+        input(type="file" class="visually-hidden" name="file")
+        span(class="js-file-upload-text") Прикрепить файл #[span(class="color ") до 5Мб]
+
+      button.button.button--accent.form__btn.form__btn--nomt Отправить
+
+      p.form__agreeemnt
+        | *нажимая отправить, вы соглашаетесь с #[a(href="/") условиями обработки персональных данных]
+
+
+.modal__container.modal__container--type2(data-target="modal-product2")
+  .modal__content
+    button.button-reset.modal__close-btn.modal-close(type="button")
+      span
+      span
+    .modal__legend
+      | Опросный лист на подбор редуктора
+
+    form.form.form--modal(action="" data-need-validation enctype="multipart/form-data")
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="name" required placeholder="Имя")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Имя
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="email" class="input" name="email" data-parsley-email required placeholder="Email")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Email
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="phone" required placeholder="8-(800)-707-57-05")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label Контактный телефон
+
+
+      .input__container
+        label.input__wrapper.input__wrapper--modal.js-validation-wrapper
+          input(type="text" class="input" name="inn" required placeholder="Имя")
+          +icon-multi("alert")(width="24" height="24" class="input__error-icon")
+          span.input__label ИНН Организации
+
+      each i in Array.from(Array(4).keys())
+        .check--container
+          .modal-legend #{++i}. Отрасль применения промышленности
+          each i in Array.from(Array(2).keys())
+            .modal-legend-small Краны
+            each i in Array.from(Array(4).keys())
+              label.check
+                input(type="checkbox" class="visually-hidden" name="custom" value="Y")
+                span.check__text
+                  | Механизмы лебедки (U)
+
+
+      label.file.js-file-upload(data-text="Прикрепить файл до 5Мб")
+        input(type="file" class="visually-hidden" name="file")
+        span(class="js-file-upload-text") Прикрепить файл #[span(class="color ") до 5Мб]
+
+      button.button.button--accent.form__btn.form__btn--nomt Отправить
+
+      p.form__agreeemnt
+        | *нажимая отправить, вы соглашаетесь с #[a(href="/") условиями обработки персональных данных]

@@ -1,0 +1,146 @@
+.selection-page {
+  &__content {
+    max-width: 80%;
+    margin-top: 6rem;
+
+    h4 {
+      margin-bottom: 1rem;
+      font: var(--font-h5);
+    }
+
+    @include mq(sm) {
+      max-width: 100%;
+    }
+  }
+
+  &__row {
+    position: relative;
+    display: flex;
+
+    @include mq(xl) {
+      display: block;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 90rem;
+
+    @include mq(xl) {
+      width: 100%;
+      min-height: auto;
+    }
+
+    &:nth-child(1) {
+      font: var(--font-h5);
+      color: #fff;
+      padding: 3rem;
+      background-color: var(--color-bg-minor);
+
+      .main-img {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70rem;
+        height: 70rem;
+
+        @include mq(xl) {
+          position: static;
+          transform: none;
+          margin: auto;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @include mq(sm) {
+        padding: 2rem;
+      }
+    }
+
+    &:nth-child(2) {
+      padding: 5rem;
+
+      @include mq(sm) {
+        padding: 0;
+        padding-top: 4rem;
+      }
+    }
+  }
+
+  &__links {
+    margin-top: auto;
+
+    .button {
+      margin-top: 4rem;
+    }
+
+    p {
+      font: var(--font-h4);
+      margin-bottom: 2rem;
+    }
+
+    &-wrap {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font: var(--font-h5);
+
+      a {
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: auto;
+  }
+
+  &__slider {
+    margin-top: 3rem;
+
+    .swiper-slide {
+      width: 24.7rem;
+      background-color: #fff;
+      padding: 1rem 0;
+
+      @include mq(sm) {
+        width: 13.7rem
+      }
+
+      img {
+        width: 22.7rem;
+        height: 9.9rem;
+        object-fit: contain;
+
+        @include mq(sm) {
+          width: 9.7rem;
+          height: 4.7rem;
+        }
+      }
+
+
+    }
+
+    .swiper-pagination {
+      position: static;
+      margin-top: 1rem;
+
+      .swiper-pagination-bullet {
+        width: 1.5rem;
+        height: 0.2rem;
+        background-color: #fff;
+      }
+    }
+
+    .page-swiper__nav {
+      bottom: 0;
+    }
+  }
+}

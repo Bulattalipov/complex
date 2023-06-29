@@ -1,0 +1,72 @@
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .tag {
+    position: relative;
+    z-index: 9;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__img-wrapper {
+    width: 100%;
+    height: 38.4rem;
+    margin-bottom: var(--offset32);
+    overflow: hidden;
+    border: 1px solid var(--color-control-secondary);
+    border-radius: 2rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 300ms;
+    }
+
+    @include mq(xl) {
+      height: 32rem;
+      margin-bottom: var(--offset16);
+    }
+
+    @include mq(lg) {
+      height: 24rem;
+    }
+
+    @include mq(sm) {
+      height: 22rem;
+    }
+  }
+
+  &__heading {
+    max-width: 46.4rem;
+    margin-bottom: var(--offset16);
+    font: var(--font-h5);
+
+    a {
+      &::before {
+        position: absolute;
+        top: 0;
+        inset: 0;
+        content: "";
+      }
+    }
+
+    @include maxSizeText(3);
+  }
+
+  &__txt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-width: 40rem;
+    overflow: hidden;
+    font: var(--font-text-16-reg);
+  }
+}

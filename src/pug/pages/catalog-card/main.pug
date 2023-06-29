@@ -1,0 +1,121 @@
+-
+  list = [
+    { name: "Изготовитель/Страна", text: "Hels/Турция" },
+    { name: "Тип присоединения", text: "фланцевое; резьбовое" },
+    { name: "Перепад давления, бар", text: "4,5; 10; 14" },
+    { name: "Материал изготовления ", text: "GGG40 - Cast iron - Высокопрочный чугун" },
+    { name: "Присоединительный размер", text: "15-25 мм; 1/2“-1”" },
+    { name: "Рабочее давление", text: "16 бар" },
+  ]
+
+
+.top-offset
++breadcrumbs([["Главная", "./"], ["Каталог", "./catalog.html"], ["Паровая арматура", "./catalog-detail.html"], ["Конденсатоотводчики"]])
+main.page-main.main
+  section.section
+    .site-container
+      .catalog-product-container
+        .catalog-product-container__block
+          .catalog-product__image
+            img(src="assets/images/catalog/card.png" alt="")
+
+          .catalog-product__btns
+            button.catalog-product__small-btn.js-open-descr Описание
+            a.catalog-product__small-btn(href="./") Каталог
+
+        .catalog-product-container__block
+          h1.catalog-product__heading
+            | HSK-20/Конденсатоотводчики
+
+          .catalog-product__image.catalog-product__image--mobile
+            img(src="assets/images/catalog/card.png" alt="")
+          .catalog-product__btns.catalog-product__btns--mobile
+            button.catalog-product__small-btn.js-open-descr Описание
+            a.catalog-product__small-btn(href="./") Каталог
+
+          p.catalog-product__legend
+            | Технические характеристики
+
+          ul.catalog-product__detail
+            for item in list
+              li.catalog-product__item
+                span.catalog-product__item-legend= item.name
+                span.catalog-product__item-text= item.text
+
+          .catalog-product__btns.catalog-product__btns--type2
+            button.button.catalog-product__btn(data-path="modal-product")
+              | Оставить заявку
+            a.button.catalog-product__btn(href="#var")
+              | Вариаты исполнения
+
+      .engineering__content
+        .engineering__content-inner
+          .engineering__content-wrapper
+            .engineering__content-inner-header
+              button.engineering__content-close
+                span
+                span
+              .engineering__content-legend Описание
+            .engineering__content-inner-content
+              .catalog-product__content
+              p
+                | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae esse, odit accusantium nobis laboriosam, accusamus ipsum exercitationem possimus ipsa nulla magnam neque voluptatem expedita aliquam provident temporibus quos, facilis ratione!
+
+                ul
+                  li Lorem ipsum dolor sit amet.
+                  li Lorem ipsum dolor sit amet.
+                  li Lorem ipsum dolor sit amet.
+                  li Lorem ipsum dolor sit amet.
+
+
+      form.catalog-product-filter
+        .catalog-product-filter__btns
+          button.catalog-product-filter__legend.catalog-product-filter__btn(type="button")
+            | Поиск по  фильтру
+
+          buttn.catalog-product-filter__clear(type="button")
+            | Очистить
+
+        ul.catalog-product-filter__list
+          each i in Array.from(Array(6).keys())
+            li.catalog-product-filter__item
+              .custom-select
+                .custom-select__label
+                  | Параметр
+                select(name=`filter${i}` class="js-select")
+                  option(value="") 1
+                  option(value="") 2
+                  option(value="") 3
+                  option(value="") 4
+
+      .catalog-product-table(id="var")
+        table
+          thead
+            tr
+              td Артикул
+              td Краткое наименование
+              td Параметр 1
+              td Параметр 2
+              td Параметр 3
+              td Параметр 4
+              td Параметр 5
+              td Параметр 6
+          tbody
+            tr
+              td
+                .tooltip
+                  | 1210017H
+                  .tooltip__content
+                    .tooltip__inner
+                      .tooltip__btns
+                        button.tooltip__btn(data-path="modal-product") Отправить запрос
+                        a.tooltip__btn(href="./catalog-card.html")  Подробнее
+              td HSK-20D, 1/2" (дюйм), 4,5 бар
+              td Значение 1 пар 1
+              td Значение 1 пар 2
+              td Значение 1 пар 3
+              td Значение 1 пар 4
+              td Значение 1 пар 5
+              td Значение 1 пар 6
+
+  include ../../parts/feedback.pug

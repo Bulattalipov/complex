@@ -1,0 +1,97 @@
+.feedback {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-offset);
+  padding: var(--offset80) 11.2rem;
+  color: var(--color-white);
+  background-color: var(--color-bg-accent);
+  border-radius: var(--offset20);
+  box-shadow: var(--box-shadow);
+
+  &__block {
+    grid-column: 6 span;
+  }
+
+  &__heading {
+    margin-bottom: var(--offset24);
+
+    @include mq(sm) {
+      margin-bottom: var(--offset16);
+    }
+  }
+
+  &__text {
+    max-width: 47.2rem;
+    font: var(--font-h5);
+
+    @include mq(sm) {
+      font: var(--font-text-16-md);
+    }
+  }
+
+  @include mq(xl) {
+    padding: var(--offset80);
+  }
+
+  @include mq(lg) {
+    display: block;
+    padding: var(--offset60) var(--offset80);
+    border-radius: 1.2rem;
+  }
+
+  @include mq(md) {
+    padding: var(--offset60);
+  }
+
+  @include mq(sm) {
+    width: auto;
+    margin-right: calc(var(--content-padding) * -1);
+    margin-left: calc(var(--content-padding) * -1);
+    padding: var(--offset60) var(--content-padding);
+  }
+
+  &--dark {
+    position: relative;
+    max-width: 72rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #16182F;
+    padding: 4.1rem 7.2rem;
+
+    @include mq(xl) {
+      max-width: 62.7rem;
+      padding: 2.6rem 7.2rem;
+    }
+
+    @include mq(md) {
+      max-width: 100%;
+    }
+
+    &:before {
+      position: absolute;
+      bottom: -27rem;
+      right: -40rem;
+      width: 62.2rem;
+      height: 85.4rem;
+      background-image: url('../images/chickens.png');
+      background-size: cover;
+      content: '';
+      z-index: -1;
+
+      @include mq(xl) {
+        width: 42.9rem;
+        height: 60rem;
+        bottom: -18rem;
+        right: -30rem;
+      }
+
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    .form__btn {
+      margin-top: 1rem;
+    }
+  }
+}

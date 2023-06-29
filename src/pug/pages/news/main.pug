@@ -1,0 +1,26 @@
+.top-offset
++breadcrumbs([["Главная", "./"], ["Новости"]])
+main.page-main.main
+  section.section
+    .site-container
+      h2.page-heading-h2
+        | Новости
+      ul.news-list
+        each i in Array.from(Array(3).keys())
+          li.news-list__item
+            article.news-card
+              .news-card__img-wrapper
+                img.news-card__img(src="assets/images/news.jpg" alt="")
+              span.news-card__date 17.02.2023
+              h3.news-card__heading
+                a(href="./news-detail.html")
+                  | Aquatherm Moscow 2023
+              p.news-card__txt
+                | Крупнейшая российская выставка комплексных инженерных решений
+
+      .news-btn__centr
+        button.news-btn.button
+          | Показать еще
+
+
+  include ../../parts/feedback.pug

@@ -1,0 +1,397 @@
+.landing-page-slider {
+  position: relative;
+  margin: 0 auto 5rem auto;
+  max-width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+
+  .swiper {
+    max-width: 60rem;
+    overflow: visible;
+
+    @include mq(sm) {
+      max-width: 100%;
+    }
+
+    .swiper-slide {
+      @include mq(sm) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    img {
+      width: 52.8rem;
+      height: 42.3rem;
+      object-fit: contain;
+      margin-bottom: 5rem;
+
+      @include mq(sm) {
+        width: 32.8rem;
+        height: 22.3rem;
+      }
+    }
+  }
+
+  .page-swiper__nav {
+    @include mq(sm) {
+      z-index: 1241;
+      bottom: 0.6rem;
+    }
+  }
+
+  .page-swiper__btn {
+    .icon {
+      stroke: #000;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 7rem;
+    height: 0.1rem;
+    background-color: #000;
+
+    @include mq(sm) {
+      width: 2rem;
+    }
+  }
+}
+
+.landing-page-cards-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4rem;
+  margin-bottom: 5.5rem;
+
+  @include mq(sm) {
+    display: block;
+  }
+}
+
+.landing-page-cards-item {
+  grid-column: 4 span;
+
+  @include mq(xl) {
+    grid-column: 6 span;
+  }
+
+  @include mq(md) {
+    grid-column: 12 span;
+  }
+
+  @include mq(sm) {
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.landing-page-card {
+  position: relative;
+  width: 100%;
+  padding: 2.5rem 2rem;
+  background-color: #10323E;
+  color: #fff;
+  min-height: 47rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font: var(--font-text-20-reg);
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba($color: #10323E, $alpha: 0.9);
+  }
+
+  @include mq(sm) {
+    min-height: 0;
+  }
+
+  .landing-page-card-heading {
+    font: var(--font-h4);
+    margin-bottom: 3rem;
+  }
+
+  ul {
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+
+      &::before {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background-color: currentColor;
+        content: "";
+      }
+    }
+  }
+
+  .landing-page-card-btns {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: auto;
+    align-self: stretch;
+
+    @include mq(sm) {
+      margin-top: 3rem;
+    }
+
+    .image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 11.4rem;
+      height: 12.9rem;
+      object-fit: contain;
+      margin-left: auto;
+
+      @include mq(sm) {
+        width: 5.4rem;
+        height: 5.9rem;
+      }
+    }
+  }
+
+  .landing-page-card-link {
+    text-decoration: underline;
+  }
+
+  .landing-page-card-link2 {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #ffff;
+
+    &:hover {
+      color: var(--color-bg-accent);
+
+      border-color: #fff;
+    }
+  }
+}
+
+.landing-page-card-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.3);
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+
+  .landing-page-card-content-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 3rem;
+    max-height: 90%;
+    max-width: 90%;
+    overflow: auto;
+    color: #000;
+
+    @include mq(sm) {
+      max-width: 96%;
+      max-height: 96%;
+      width: 100%;
+    }
+
+    .close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: #000;
+    }
+
+    .landing-page-card-content-head {
+      font: var(--font-h4);
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: var(--color-bg-accent);
+      }
+    }
+
+    .button {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.landing-qoute {
+  display: flex;
+
+  @include mq(sm) {
+    flex-direction: column;
+  }
+
+  .landing-qoute-block {
+    &:nth-child(1) {
+      flex-shrink: 0;
+      margin-right: 6.5rem;
+
+      img {
+        width: 22.3rem;
+        height: 24rem;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .landing-qoute-heading {
+    position: relative;
+    font: var(--font-h5);
+    margin-bottom: 2rem;
+
+    max-width: 80%;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 6rem;
+      height: 4.2rem;
+      background-image: url("../images/Quotemarks-left.png");
+      transform: translateY(-50%);
+      content: "";
+    }
+
+    @include mq(sm) {
+      margin-top: 2rem;
+      max-width: 100%;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .landing-qoute-text {
+    max-width: 80%;
+    font: var(--font-text-20-reg);
+    font-style: italic;
+
+    @include mq(sm) {
+      max-width: 100%;
+    }
+  }
+}
+
+.landing-qoute-author {
+  font: var(--font-h5);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.landing-qoute-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.landing-people {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4rem;
+
+  @include mq(sm) {
+    display: block;
+  }
+}
+
+.landing-people-item {
+  grid-column: 4 span;
+  display: flex;
+  gap: 3.3rem;
+
+  @include mq(xl) {
+    grid-column: 6 span;
+  }
+
+  @include mq(md) {
+    grid-column: 12 span;
+  }
+
+  @include mq(sm) {
+    margin-bottom: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .landing-people-item-block {
+    &:nth-child(1) {
+      width: 20.4rem;
+      height: 22.6rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .landing-people-item-label1 {
+    color: #9BA0AE;
+    font: var(--font-h4);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  .landing-people-item-label2 {
+    font: var(--font-h5);
+    margin-bottom: 1rem;
+  }
+
+  .landing-people-item-label3 {
+    font: var(--font-text-20-reg);
+  }
+
+  .landing-people-item-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,174 @@
+-
+  smallTable = [
+    ["Количество типоразмеров", "20"],
+    ["Редукция", "до 4 ступеней"],
+    ["Крутящий момент", "от 1 000 HM до 50 000 HM"],
+  ]
+
+
+.top-offset
++breadcrumbs([["Главная", "./"], ["Разделы", "./"], ["Редукторы"]])
+main.page-main.main
+  section.section.gearbox
+    .site-container
+      h2.page-heading-h2
+        | Косозубые конические мотор-редукторы для смесителей (сухие колодцы), серия KR
+
+      .catalog-product-container.page-swiper-parent
+        .catalog-product-container__block
+          .catalog-product__image.page-swiper.swiper(data-nav="true" data-pagination="true")
+            .swiper-wrapper
+              each i in Array.from(Array(4).keys())
+                img(src="assets/images/reductors.png" class="swiper-slide" alt="")
+            .swiper-pagination
+            .page-swiper__nav
+              button.page-swiper__btn.js-prev-slide
+                +icon-mono("arrow-left")(width="24" height="24")
+              button.page-swiper__btn.js-next-slide
+                +icon-mono("arrow-left")(width="24" height="24")
+
+        .catalog-product-container__block.partners__content
+
+          p
+            | Редукторы для смесителей серии К с упрочненными подшипниками выходного вала,
+            | специальными уплотнениями и дополнительной маслосборной емкостью для предотвращения утечки масла
+            | за пределы редуктора. Редукторы специально разработаны для пищевой промышленности и обработки сточных вод,
+            | где утечка масла может стать серьезной проблемой. Для определения утечки масла также предназначен
+            | дополнительный датчик масла.
+
+
+          .partners-links
+            a(href="javascript:;" data-path="modal") Оставить заявку
+            a(href="javascript:;" data-path="modal-product2") Заполнить опросный лист
+            a(href="./") Скачать опросный лист
+
+
+  section.section.page-tab-parent.gearbox
+    .site-container
+      .catalog-product-filter__btns
+        button.gearbox__tech
+          | Технические характеристики
+
+        buttn.catalog-product-filter__clear(type="button")
+          | Очистить
+
+      .reviews-btns
+        button.button.page-tab-btn.is-active(data-tab-name="r") Общие
+        button.button.page-tab-btn(data-tab-name="s") Тип входа
+        button.button.page-tab-btn(data-tab-name="s2") Тип выхода
+        button.button.page-tab-btn(data-tab-name="s3") Исполнение
+
+      .reviews-content.page-tab-content.is-active(data-tab-content="r")
+        .gearbox-small-table
+          table
+            tbody
+              for item in smallTable
+                tr
+                  td= item[0]
+                  td= item[1]
+
+        .gearbox__advantages
+          .gearbox__advantages-block
+            h4 Преимущества
+            ul
+              li Высокая интенсивность крутящего момента, обеспечиваемая с помощью компактного корпуса и подшипников
+              li Варианты подшипников для высоких радиальных и осевых нагрузок
+              li Варианты выходного вала (цельный вал, усадочный диск, пустотелый вал со шлицами, цельный вал со шлицами)
+              li Фланцы под электродвигатель переменного тока и гидравлический двигатель
+              li Варианты перпендикулярного входного вала с конической ступенью
+              li Варианты муфты под соединение червячной или конической передачи для понижения выходной частоты вращения
+              li Различные варианты систем охлаждения и смазки для различных рабочих условий
+
+          .gearbox__advantages-block
+            h4 Варианты исполнения и дополнительное оборудование:
+
+            ul
+              li Соединительные фланцы под конкретный сервопривод
+              li Электромагнитные тормоза
+              li Электромагнитные и гидравлические тормоза
+              li Вариант с импульсным энкодером (512–1024)
+              li Вариант с внешним вентиляторным охлаждением для применения с частотно-регулируемым приводом
+              li Специальные уплотнения
+              li Стеклянный индикатор уровня масла
+
+      .reviews-content.page-tab-content(data-tab-content="s")
+        ul.gearbox-items
+          each i in Array.from(Array(7).keys())
+            li.gearbox-item
+              img(src="assets/images/Rectangle_193.png" alt="")
+              .gearbox-item-content
+                h3.gearbox-item-legend Серия Р + KR
+                p Планетарный редуктор с подсоединенной конической передачей.
+
+      .reviews-content.page-tab-content(data-tab-content="s2")
+        ul.gearbox-items
+          each i in Array.from(Array(7).keys())
+            li.gearbox-item
+              img(src="assets/images/Rectangle_193.png" alt="")
+              .gearbox-item-content
+                h3.gearbox-item-legend P..01
+                p Цельный выходной вал
+
+      .reviews-content.page-tab-content(data-tab-content="s3")
+        h3.gearbox-item-legend-table ПЛАНЕТАРНЫЕ РЕДУКТОРЫ - ИСПОЛНЕНИЕ (P...L..)
+
+        .catalog-product-table.gearbox
+          table
+            thead
+              tr
+                td ТИПОРАЗМЕР РЕДУКТОРА
+                td P.11.L..
+                td P.12.L..
+                td P.15.L..
+                td P.16.L..
+                td P.19.L..
+                td P.23.L..
+                td P.24.L..
+            tbody
+              tr
+                td
+                  | Диапазон передаточных отношений
+                td 4 - 2763
+                td 4 - 2763
+                td Значение 1 пар 2
+                td 4 - 2858
+                td 4 - 2858
+                td 4 - 2957
+                td 3 - 2456
+
+        h3.gearbox-item-legend-table ПЛАНЕТАРНЫЕ РЕДУКТОРЫ - ИСПОЛНЕНИЕ (P...K..)
+
+        .catalog-product-table.gearbox
+          table
+            thead
+              tr
+                td ТИПОРАЗМЕР РЕДУКТОРА
+                td P.11.L..
+                td P.12.L..
+                td P.15.L..
+                td P.16.L..
+                td P.19.L..
+                td P.23.L..
+                td P.24.L..
+            tbody
+              tr
+                td
+                  | Диапазон передаточных отношений
+                td 4 - 2763
+                td 4 - 2763
+                td Значение 1 пар 2
+                td 4 - 2858
+                td 4 - 2858
+                td 4 - 2957
+                td 3 - 2456
+
+      p.gearbox-legend-text
+        | Электродвигатели и редукторы Yılmaz Redüktör являются аналогами для многих известных брендов Европы:
+      ul.gearbox-box
+        li SEW-EURODRIVE;
+        li NORD;
+        li BAUER;
+        li MOTOVARIO;
+        li LENZE;
+        li BONFLIGLIOLI;
+        li CHIARAVALLI

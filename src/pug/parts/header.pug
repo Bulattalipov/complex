@@ -1,0 +1,47 @@
+-
+  nav = [
+    { name: "Сервис", link: "./service.html" },
+    { name: "Инжиниринг", link: "./engineering.html" },
+    { name: "Поставка оборудования", link: "./delivery.html" },
+    { name: "Контакты", link: "./contacts.html" }
+  ]
+
+  classWhite = [
+    "main"
+  ]
+
+header.header(class={"header--white": classWhite.includes(name)})
+  .site-container
+    a.header__logo(href="./index.html")
+      img(src="assets/images/logo-white.svg" alt="Логотип компании")
+    a.header__logo.header__logo--secondary(href="/")
+      img(src="assets/images/logo.svg" alt="Логотип компании")
+
+    .header__nav-wrapper
+      button.header__mobile-menu
+        | Меню
+      nav.nav.header__nav
+        ul.nav__list
+          for item in nav
+            li.nav__item
+              a(href=item.link class="nav__link")= item.name
+          li.nav__item
+            a(href="./about.html" class="nav__link") О нас
+            .dropdown
+              .dropdown-content
+                a.dropdown-item(href="./news.html") Новости
+                a.dropdown-item(href="./partners.html") Партнеры
+                a.dropdown-item(href="./completed-projects.html") Реализованные проекты
+
+      .header__catalog-btn
+        +icon-mono("menu-square")(width="24" height="24" class="header__catalog-btn-icon")
+        a(href="./catalog.html") Каталог
+
+        .dropdown
+          .dropdown-content
+            a.dropdown-item(href="./news.html") Пароконденсатные системы
+            a.dropdown-item(href="./partners.html") Редукторы и мотор-редукторы
+            a.dropdown-item(href="./") Электродвигатели
+            a.dropdown-item(href="./") Приводные ремни и цепи
+
+    button.button.button--accent.header__btn(data-path="modal") Оставить заявку

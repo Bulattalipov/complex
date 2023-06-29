@@ -1,0 +1,144 @@
+.section
+  .site-container
+    section.delivery-intro(style={"background-image": "url(assets/images/img112312.png)"})
+      .delivery-intro__info
+        h2.delivery-intro__heading Поставка оборудования
+      .delivery-intro__info-list
+        .delivery-intro__info-list-legend
+          | Региональные представительства
+        .delivery-intro__info-list-ul
+          .delivery-intro__info-list-item
+            span.delivery-intro__info-list-small-legend
+              | Поволжье
+            .delivery-intro__info-list-links
+              p Гисматуллов Фанис
+              a(href="tel:8 (937)522-80-32") 8 (937)522-80-32
+              a(href="mailto:mechanics.order@compeq.ru") mechanics.order@compeq.ru
+
+          .delivery-intro__info-list-item
+            span.delivery-intro__info-list-small-legend
+              | Урал
+            .delivery-intro__info-list-links
+              p Александр Кумбралев
+              a(href="tel:8 (927) 04 44 059") 8 (927) 04 44 059
+              a(href="mailto:alexander.kumbralev@compeq.ru") alexander.kumbralev@compeq.ru
+
+
+          .delivery-intro__info-list-item
+            span.delivery-intro__info-list-small-legend
+              | Сибирь
+            .delivery-intro__info-list-links
+              p Михаил Левен
+              a(href="tel:8 (927) 493-83-27") 8 (927) 493-83-27
+              a(href="mailto:mikhail.leven@compeq.ru") mikhail.leven@compeq.ru
+
+    .delivery-intro__content
+      .delivery-intro__content-text
+        | Наш опыт сотрудничества с европейскими производителями в нынешних реалиях помогает нам поддерживать импорт из Европы и успешно находить проверенных производителей в  странах Востока.
+
+      a.button(href="./catalog.html")
+        | Перейти в каталог
+
+
+section.section
+  .site-container.delivery-office
+    h2.site-second-heading Отдел продаж и развития
+
+    .delivery-office__row
+      .delivery-office__block
+        img(src="assets/images/1212123rt.png" alt="")
+      .delivery-office__block
+        .delivery-office__gramota
+          .delivery-office__gramota-legend
+            | Размещаемся на ЭТП
+          .delivery-office__gramota-wrap
+            ul
+              li B2B-Center
+              li РОСЭЛТОРГ
+              li Фабрикант
+              li и другие
+            img(src="assets/images/gramota.png" alt="")
+
+    .delivery-office__content
+      h3 Штат из более чем 20 сотрудников
+
+      ul
+        li Развивает направления поставки комплектующих и оборудования;
+        li Укрепляет текущие связи с проверенными поставщиками;
+        li Прорабатывает любой запрос клиента по промышленному оборудованию.
+
+
+
+
+section.section
+  .site-container.selection
+    h2.site-second-heading Основные направления по подбору оборудования
+    p.selection__text Направления, по которым мы специализируемся - подбор выполняет специалист с многолетним стажем работы в данной сфере
+    ul.selection-list
+      li.selection-list__item
+        .selection-list__block
+          img(src="assets/images/123.png" alt="")
+        .selection-list__block
+          .selection-list__content
+            | Индустриальные редукторы и электродвигатели
+          .selection-list__row
+            .selection-list__links
+              p Тарасов Денис
+              a(href="tel:+7 937 522 7973") +7 937 522 7973
+              a(href="mailto:tarasov.denis@compeq.ru") tarasov.denis@compeq.ru
+            a.button(href="./")
+              | Подробнее
+
+      li.selection-list__item
+        .selection-list__block
+          img(src="assets/images/12312412332.png" alt="")
+        .selection-list__block
+          .selection-list__content
+            | Пароконденсатные системы
+          .selection-list__row
+            .selection-list__links
+              p Галиимов Асхат
+              a(href="tel:+7 927 034 5654") +7 927 034 5654
+              a(href="mailto:galimov.AskHat@compeq.ru") galimov.AskHat@compeq.ru
+
+            a.button(href="./")
+              | Подробнее
+
+      li.selection-list__item
+        .selection-list__block
+          img(src="assets/images/123115134.png" alt="")
+        .selection-list__block
+          .selection-list__content
+            | Промышленная химия
+          .selection-list__row
+            .selection-list__links
+              p Кузяева Лилия
+              a(href="tel:+7 927 030 3731") +7 927 030 3731
+              a(href="mailto:kuzyaeva.liliya@compeq.ru") kuzyaeva.liliya@compeq.ru
+
+            a.button(href="./")
+              | Подробнее
+
+-
+  terms = [
+    "Поставки напрямую от производителя",
+    "Возможная отсрочка платежа",
+    "Система скидок для&nbsp;постоянных клиентов",
+    "Консигнация товара&nbsp;на складе",
+    "Защита проекта",
+    "Техническое сопровождение",
+    "Бесплатная доставка  от 100 т.р.",
+    "Бесплатная доставка до терминала"
+  ]
+
+section.section
+  .site-container.terms
+    h2.site-second-heading
+      | Условия сотрудничества
+    p.terms__text
+      | Наши клиенты получают отличные бонусы, как в долгосрочной перспективе сотрудничества, так и при первом контакте
+
+    ul.terms__list
+      for item in terms
+        li.terms__item
+          p.terms__item-text!= item

@@ -1,0 +1,125 @@
+.supplied-equipment {
+    &__legend {
+        max-width: 69.3rem;
+        font: 500 6.4rem/7.5rem var(--main-ff);
+        margin-bottom: 5rem;
+
+        @include mq(xl) {
+            font: 500 4rem/1 var(--main-ff);
+        }
+    }
+
+    &__slider-wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 0;
+        margin-bottom: 10.6rem;
+    }
+
+    &__slider {
+        width: 150rem;
+        overflow: hidden;
+    }
+
+    &__list {
+        @include mq(xs) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        position: relative;
+        height: 75.2rem;
+        width: 48.8rem;
+        display: flex;
+        align-items: flex-end;
+
+        @include mq(custom, max, 1400) {
+            width: 35rem;
+            height: 53rem;
+        }
+
+        @include mq(xs) {
+            width: 100%;
+            margin-bottom: 2.8rem;
+            align-items: flex-start;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__item-box {
+        width: 100%;
+        padding: 3.2rem 1.2rem;
+        background: linear-gradient(#050920, transparent);
+        color: var(--color-white);
+    }
+
+    &__item-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__item-box-title {
+        font: 700 3.2rem/1.1 var(--additional-ff);
+        margin-bottom: 5rem;
+
+        @include mq(custom, max, 1400) {
+            margin-bottom: 1rem;
+            font: 700 2.4rem/1.1 var(--additional-ff);
+        }
+    }
+
+    &__item-box-link {
+        position: static;
+        display: inline-block;
+        font: 500 2.8rem/3.6rem var(--main-ff);
+        color: rgba(255, 255, 255, 0.60);
+        text-decoration: underline;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            content: '';
+        }
+
+        @include mq(custom, max, 1400) {
+            font: 500 2.4rem/3.6rem var(--main-ff);
+        }
+    }
+
+    &__swiper-navigation {
+        @include mq(xs) {
+            display: none;
+        }
+    }
+
+    &__swiper-next {
+        img {
+            width: 12rem;
+            height: 12rem;
+            flex-shrink: 0;
+            margin-left: 1.5rem;
+
+            @include mq(custom, max, 1400) {
+                width: 7rem;
+                min-width: 7rem;
+                height: 7rem;
+            }
+        }
+    }
+}

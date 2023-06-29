@@ -1,0 +1,21 @@
+.top-offset
++breadcrumbs([["Главная", "./"], ["Партнеры"]])
+main.page-main.main
+  section.section
+    .site-container
+      h2.page-heading-h2
+        | Партнёры
+      p.page-base-text
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ullam veritatis repellat, molestias, aperiam quaerat placeat architecto sed hic iste incidunt doloribus non voluptatem ab soluta, nobis est libero provident.
+
+  section.section
+    .site-container
+      .partners
+        ul.partners__list.grid-container
+          each i in Array.from(Array(6).keys())
+            li.partners__item
+              a(href="./partners-detail.html")
+                img(src=`assets/images/partners/img${i}.png` alt="")
+
+
+  include ../../parts/feedback.pug

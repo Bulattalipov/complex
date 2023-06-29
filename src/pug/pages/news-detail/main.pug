@@ -1,0 +1,92 @@
+.top-offset
++breadcrumbs([["Главная", "./"], ["Новости", "./"], ["День семьи 2022"]])
+main.page-main.main
+  section
+    .site-container
+      .news-flex
+        h2.page-heading-h2
+          | День семьи 2022
+        span #Новости
+      span.news-detail__date 23.07.2022
+
+  section.news-detail
+    .site-container
+      .news-detail__grid
+        .news-detail__grid-block
+          .news-detail__content.page-swiper-parent
+            h2 Заголовок 2
+            p
+              | 23 июля #[strong состоялось] ежегодное традиционное мероприятие – День семьи.
+              | Было организовано множество #[a(href="./") игровых станций], креативная фотозона,
+              | игровые площадки для детей и многое другое. Праздник прошел красиво,
+              | весело и спортивно.
+
+            h3 Заголовок 3
+            p
+              | 23 июля состоялось ежегодное традиционное мероприятие – День семьи.
+              | #[i креативная фотозона, игровые площадки для детей и многое другое. Праздник прошел красиво, весело и спортивно.]
+
+            h4 Заголовок 4
+            p
+              | 23 июля состоялось ежегодное традиционное мероприятие – День семьи.
+              | Было организовано множество игровых станций, креативная фотозона,
+              | игровые площадки для детей и многое другое. Праздник прошел красиво,
+              | весело и спортивно.
+
+            img(src="assets/images/image.jpg" alt="")
+
+            p
+              | В «Комплексном оснащении» День семьи отмечается с даты основания компании – 2014 года.
+              | Ценность данного мероприятия для компании – создание дружной атмосферы в коллективе,
+              | знакомство с семьями сотрудников и просто веселое времяпрепровождение.
+              | Для организации немаловажно, чтобы вновь прибывшие сотрудники чувствовали
+              | себя комфортно в коллективе.
+            p
+              | Коллектив нашей компании – большая дружная семья. Это не бонус,
+              | не дополнение к успеху, карьере или достижениям. Это основа и поддержка,
+              | которую мы чувствуем и отдаем ежедневно.
+
+
+            .slider.swiper.page-swiper(data-nav="true" data-num="true" data-pagination="true")
+              .swiper-wrapper
+                each i in Array.from(Array(5).keys())
+                  img.swiper-slide(src="assets/images/image.jpg" alt="")
+              .swiper-pagination
+              .page-swiper__nav.page-swiper__nav--numb
+                button.page-swiper__btn.js-prev-slide
+                  +icon-mono("arrow-left")(width="24" height="24")
+                .swiper-number
+                  | 2
+                button.page-swiper__btn.js-next-slide
+                  +icon-mono("arrow-left")(width="24" height="24")
+
+            ul
+              li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quas dolorum eveniet ipsa fuga, sit necessitatibus delectus ex est voluptatem!
+              li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quas dolorum eveniet ipsa fuga, sit necessitatibus delectus ex est voluptatem!
+              li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure quas dolorum eveniet ipsa fuga, sit necessitatibus delectus ex est voluptatem!
+
+        .news-detail__grid-block
+          ul.news-detail__next
+            li.news-detail__next-item
+              span.news-detail__next-legend Следующая новость
+              a.news-detail__next-legend-link(href="./")
+                | Расширяем ассортимент - сотрудничаем с PNOSAN CO LTD
+
+  section.news-more.section
+    .site-container
+      h2.page-heading-h2 Еще новости
+      ul.news-list.news-list--mb
+        each i in Array.from(Array(3).keys())
+          li.news-list__item
+            article.news-card
+              .news-card__img-wrapper
+                img.news-card__img(src="assets/images/news.jpg" alt="")
+              span.news-card__date 17.02.2023
+              h3.news-card__heading
+                a(href="./news-detail.html")
+                  | Aquatherm Moscow 2023
+              p.news-card__txt
+                | Крупнейшая российская выставка комплексных инженерных решений
+
+
+  include ../../parts/feedback.pug

@@ -1,0 +1,40 @@
+.top-offset
++breadcrumbs([["Главная", "./"], ["Ремонт и обслуживание"]])
+main.page-main.main
+  section.section
+    .site-container
+      h2.page-heading-h2.repair-heading
+        | Ремонт и обслуживание
+
+      .repair-card-container
+        each i in Array.from(Array(5).keys())
+          article.repair-card.page-swiper-parent
+            .repair-card__block
+              .repair-card__block-content.more-text-parent
+                h2 Ремонт и профилактика работы редукторов и мотор-редукторов
+                .more-text
+                  p
+                    | Полный разбор и диагностика мотор-редукторов с заменой неисправных комплектующих.
+                    | После ремонта оборудование подвергается испытаниям на стенде. При необходимости
+                    | выполняются покрасочные работы.
+                    | Полный разбор и диагностика мотор-редукторов с заменой неисправных комплектующих.
+                    | После ремонта оборудование подвергается испытаниям на стенде. При необходимости
+                    | выполняются покрасочные работы.
+                a.more-text-btn(href="javascript:;")
+                  | Показать еще
+
+              button.button(data-path="modal")
+                | Заказать услугу
+
+            .repair-card__block
+              .swiper.page-swiper(data-nav="true" data-pagination="true")
+                .swiper-wrapper
+                  each i in Array.from(Array(5).keys())
+                    .swiper-slide
+                      img(src="assets/images/img11.jpg" alt="")
+                .swiper-pagination
+                .page-swiper__nav
+                  button.page-swiper__btn.js-prev-slide
+                    +icon-mono("arrow-left")(width="24" height="24")
+                  button.page-swiper__btn.js-next-slide
+                    +icon-mono("arrow-left")(width="24" height="24")

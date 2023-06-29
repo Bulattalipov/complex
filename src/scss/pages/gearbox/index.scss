@@ -1,0 +1,253 @@
+.gearbox {
+  .page-heading-h2 {
+    max-width: 90%;
+    margin-bottom: 5rem;
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      width: 6.4rem;
+      height: 0.1rem;
+      background-color: #9ba0ae;
+      opacity: 1;
+
+      @include mq(sm) {
+        width: 1rem;
+      }
+
+      &.swiper-pagination-bullet-active {
+        background-color: #000;
+      }
+    }
+  }
+
+  .page-swiper__nav {
+    z-index: 10;
+
+    .icon {
+      stroke: #000;
+    }
+  }
+
+  &__tech {
+    font: var(--font-h6);
+  }
+
+  .catalog-product-filter__btns {
+    margin-bottom: 3rem;
+  }
+
+  .button.page-tab-btn.is-active {
+    color: var(--color-bg-minor);
+    background-color: #fff;
+    border: 2px solid var(--color-bg-minor);
+  }
+}
+
+.gearbox-small-table {
+  width: 94.6rem;
+  font: var(--font-text-20-reg);
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 2rem 0.5rem 1rem;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--color-bg-minor);
+
+    @include mq(sm) {
+      padding: 1rem;
+    }
+  }
+
+  @include mq(md) {
+    width: 100%;
+  }
+
+  @include mq(sm) {
+    overflow: auto;
+    line-height: 1;
+
+    @include noScrollbar();
+  }
+}
+
+.gearbox__advantages {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-offset) 5rem;
+  margin-top: 4rem;
+
+  @include mq(sm) {
+    display: block;
+  }
+
+  &-block {
+    grid-column: 6 span;
+
+    @include mq(sm) {
+      margin-bottom: 4rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+    font: var(--font-h5);
+  }
+
+  ul {
+    font: var(--font-text-20-reg);
+
+    li {
+      position: relative;
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+
+      &::before {
+        position: absolute;
+        top: 1.3rem;
+        left: 0;
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #000;
+        border-radius: 50%;
+        content: "";
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.gearbox-items {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-offset) 10rem;
+
+  @include mq(sm) {
+    display: block;
+  }
+
+  .gearbox-item {
+    display: flex;
+    grid-column: 6 span;
+    align-items: center;
+
+    @include mq(sm) {
+      align-items: flex-start;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    img {
+      flex-shrink: 0;
+      width: 16.2rem;
+      height: 16.2rem;
+      object-fit: contain;
+      margin-right: 2rem;
+      filter: drop-shadow(0px 10px 40px rgba(10, 12, 16, 0.1));
+
+      @include mq(sm) {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+
+  .gearbox-item-legend {
+    margin-bottom: 1rem;
+    font: var(--font-h6);
+
+    @include mq(sm) {
+      margin-bottom: 0.5rem;
+      font: var(--font-text-20-md);
+    }
+  }
+
+  p {
+    font: var(--font-text-20-reg);
+
+    @include mq(sm) {
+      font: var(--font-text-16-reg);
+    }
+  }
+}
+
+.catalog-product-table.gearbox {
+  font: var(--font-text-20-reg);
+
+  tr {
+    td {
+      vertical-align: middle;
+
+      &:nth-child(1) {
+        width: 19rem;
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.gearbox-item-legend-table {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font: var(--font-h5);
+}
+
+.gearbox-legend-text {
+  max-width: 70%;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font: var(--font-h4);
+
+  @include mq(sm) {
+    font: var(--font-h3)
+  }
+}
+
+.gearbox-box {
+  display: inline-block;
+  padding: 3rem;
+  font: var(--font-h3);
+  border: 2px solid #000;
+
+  @include mq(sm) {
+    padding: 2rem;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+
+    &::before {
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #000;
+      border-radius: 50%;
+      content: "";
+
+      @include mq(sm) {
+        top: 1.2rem;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

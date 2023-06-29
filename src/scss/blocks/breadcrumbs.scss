@@ -1,0 +1,37 @@
+.breadcrumbs {
+  &__container {
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+
+    &.breadcrumbs--white {
+      color: var(--color-text-invert);
+
+      .breadcrumbs__arrow {
+        background-color: var(--color-text-invert);
+      }
+    }
+  }
+
+  display: flex;
+  align-items: center;
+
+  &__arrow {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 0.1rem;
+    margin: 0 0.7rem;
+    background-color: #000;
+  }
+
+  &__item {
+    flex-shrink: 0;
+  }
+
+  @include mq(md) {
+    margin-right: calc(-1 * var(--content-padding));
+    padding-right: var(--content-padding);
+    overflow: auto;
+
+    @include noScrollbar();
+  }
+}

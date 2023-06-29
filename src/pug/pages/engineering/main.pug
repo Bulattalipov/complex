@@ -1,0 +1,89 @@
+-
+  const engineering = [
+    { name: "Инжиниринг приводной техники",
+      tex: "Инженеры по продажам в сфере приводной техники специализируются на проработке индустриальных мотор-редукторов и редукторов по техническому заданию клиента. Имея специальные знания и программное обеспечение разрабатываются индивидуальные проектные решения по внедрению оборудования на предприятиях." },
+    { name: "Инжиниринг паро&shy;конденсатного оборудования",
+      tex: "Направление инжиниринга в отделе пароконденсатных систем занимается решением вопросов по поддержанию состояния, безопасной эксплуатации или приведения существующей системы к высоким стандартам предприятия." },
+    { name: "Проектные решения по индивидуальному заказу",
+      tex: "Инженеры сервисного отдела занимаются разработкой технической документации, на основании технического задания клиента. <br> Мы предоставляем комплекс услуг: разработку решения и непосредственно изготовление объектов." },
+  ]
+
+  terms2 = [
+    "Гарантия на произведённое нами оборудование",
+    "Консультация инженера",
+    "Экономические выгоды"
+  ]
+
+  content = [
+    { name: "Разработка самостоятельных чертежей",
+      text: "Наши инженеры составляют чертежи на основе полученных данных от клиента. Ими могут быть техническое задание, краткое описание или имеющийся образец. " },
+    { name: "3D-моделирование",
+      text: "В штате имеются специалисты, которые выполняют проектирование объемных моделей по ТЗ. При дальнейшей разработке это помогает клиенту понять каким будет конечный результат. На основе 3D-модели пишутся чертежи. " },
+    { name: "Изготовление изделий по чертежам и образцам", text: "Результатом работы нашего инжинирингового отдела является передача готовой технической документации специалистам, которые будут по этим чертежам изготавливать изделия. Наша компания предоставляет комплексные услуги, поэтому у нас есть свой собственный производственный цех с грамотными слесарями, сварщиками, токарями и другими специалистами. Полный перечень предоставляемых услуг смотрите в <a href='./service.html'>Сервисе</a>" },
+  ]
+
+.top-offset
+main.page-main.main
+
+  section.section.section-top-offset
+    .site-container
+      h2.page-heading-h2
+        | Инжиниринг
+      p.page-base-text
+        | В настоящее время приобрели популярность поиск и замена европейских оборудования:
+        | комплектующих, запчастей на аналогичные. Инжиниринг Комплексного
+        | оснащения помогает клиенту в закрытии этой задачи.
+
+  section.section
+    .site-container
+      ul.engineering
+        for item, i in engineering
+          li.engineering__item
+            article.engineering-card
+              h2.engineering-card__heading!= item.name
+              p.engineering-card__text!= item.tex
+
+              .engineering-card__btns
+                button.engineering-card__link Подробнее
+                button.button.button--rounded.button--secondary.engineering-card__btn(data-path="modal")
+                  | Оставить заявку
+
+            img(src=`assets/images/eng${i}.jpg` class="engineering__img" alt="")
+
+            .engineering__content
+              .engineering__content-inner
+                .engineering__content-wrapper
+                  .engineering__content-inner-header
+                    button.engineering__content-close
+                      span
+                      span
+                    .engineering__content-legend Услуги
+                  .engineering__content-inner-content
+                    ul.engineering__content-list
+                      for item in content
+                        li.engineering__content-item.page-swiper-parent
+                          .engineering__block
+                            .page-swiper__nav
+                              button.page-swiper__btn.js-prev-slide
+                                +icon-mono("arrow-left")(width="24" height="24")
+                              button.page-swiper__btn.js-next-slide
+                                +icon-mono("arrow-left")(width="24" height="24")
+                            .swiper.page-swiper(data-nav="true")
+                              .swiper-wrapper
+                                each i in Array.from(Array(5).keys())
+                                  .swiper-slide
+                                    img(src="assets/images/engineering.jpg" alt="")
+
+                          .engineering__block
+                            .engineering__block-content
+                              h2= item.name
+                              p!= item.text
+
+                      .engineering__content-legend Преимущества клиента
+                      ul.terms__list
+                        for item in terms2
+                          li.terms__item
+                            p.terms__item-text!= item
+
+
+  include ../../parts/feedback.pug

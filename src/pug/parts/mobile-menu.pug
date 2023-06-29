@@ -1,0 +1,20 @@
+-
+  nav_menu = [
+    { name: "Инжиниринг и сервис", link: "./service.html" },
+    { name: "Проектные решения", link: "./" },
+    { name: "Поставка", link: "./delivery.html" },
+    { name: "О нас", link: "./about.html" },
+    { name: "Новости", link: "./news.html" },
+    { name: "Партнеры", link: "./partners.html" },
+    { name: "Реализованные проекты", link: "" },
+    { name: "Контакты", link: "./contacts.html" }
+  ]
+
+.mobile-menu
+  .mobile-menu__content
+    button.mobile-menu__close(aria-label="Закрыть меню")
+      +icon-mono("close")(width="28" height="28" class="mobile-menu__close-icon")
+    ul.mobile-menu__list
+      for item in nav_menu
+        li.mobile-menu__item
+          a(href=item.link)= item.name

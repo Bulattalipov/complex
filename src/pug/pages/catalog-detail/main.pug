@@ -1,0 +1,40 @@
+.top-offset
++breadcrumbs([["Главная", "./"], ["Каталог", "./catalog.html"], ["Трубопроводная арматура для пароконденсатных систем"]])
+main.page-main.main
+  section.section
+    .site-container
+      .catalog-selection-card-wrapper
+        .catalog-selection-card-wrapper-block
+          h2.page-heading-h2
+            | Трубопроводная арматура для пароконденсатных систем
+          p.page-base-text
+            | Всё для установки пароконденсатных и других трубопроводных систем на предприятии
+        .catalog-selection-card-wrapper-block
+          .catalog-selection-card
+            .catalog-selection-card-img-wrapper
+              img(src="assets/images/man2.png" class="catalog-selection-card-img" alt="")
+              .catalog-selection-card-info
+                span.catalog-selection-card-txt-legend Галимов Асхат
+                .catalog-selection-card-info-grey
+                  a.catalog-selection-card-txt(href="tel:+7 927 034 5654") +7 927 034 5654
+                  a.catalog-selection-card-txt(href="mailto:galimov.AskHat@compeq.ru") galimov.AskHat@compeq.ru
+            .catalog-selection-card-info-text
+              | Инженер по подбору оборудования для пароконденсатных систем
+  section.section
+    .site-container
+      ul.catalog-detail
+        each i in Array.from(Array(10).keys())
+          li.catalog-detail__item
+            article.catalog-detail-card
+              img(src="assets/images/catalog/imggg.png" alt="")
+              h2.catalog-detail-card__heading
+                a(href="./catalog-card.html")
+                  | Системы регулирования
+              p.catalog-detail-card__txt Всё для установки пароконденсатной системы на предприятии
+
+
+      p.page-base-text.catalog-detail__text
+        | Электронный каталог продукции партнёров Комплексного оснащения  содержит не все позиции, что мы фактически можем Вам предоставить. Если вы не нашли какое-то промышленное оборудование на нашем сайте, то обратитесь к нашим менеджерам.
+        | Также вы можете посмотреть наши каталоги в PDF формате онлайн.
+
+  include ../../parts/feedback.pug

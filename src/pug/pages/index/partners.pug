@@ -1,0 +1,12 @@
+section.section
+  .site-container
+    .partners
+      .partners__heading-wrapper
+        h2.site-second-heading
+          | Наши партнеры — мировые лидеры
+        a(href="./partners.html" class="site-more-link") #[span Показать всех]
+      ul.partners__list.grid-container
+        each i in Array.from(Array(6).keys())
+          li.partners__item
+            a(href="./partners-detail.html")
+              img(src=`assets/images/partners/img${i}.png` alt="")

@@ -1,0 +1,145 @@
+.delivery-intro {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 67.2rem;
+  margin-top: 7rem;
+  padding-top: 11.6rem;
+  padding-left: 8rem;
+  padding-bottom: 8rem;
+  padding-right: 4rem;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.5rem;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(5 9 32/34%);
+    content: "";
+  }
+
+  &__info-list {
+    margin-top: auto;
+
+    @include mq(xl) {
+      margin-top: 4rem;
+    }
+
+    &-legend {
+      font: var(--font-h4);
+      margin-bottom: 2rem;
+
+      @include mq(sm) {
+        font: 500 2rem/2.8rem var(--main-ff);
+        max-width: 80%;
+      }
+    }
+
+    &-ul {
+      display: flex;
+
+      @include mq(xl) {
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: space-between;
+      }
+    }
+
+    &-item {
+      margin-right: 3.2rem;
+
+      @include mq(xl) {
+        margin-right: 0;
+      }
+    }
+
+    &-small-legend {
+      display: block;
+      margin-bottom: 1rem;
+      font: var(--font-h5);
+
+      @include mq(sm) {
+        font: 500 2rem/2.8rem var(--main-ff);
+        max-width: 80%;
+      }
+    }
+
+    &-links {
+      font: var(--font-h6);
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+
+      @include mq(sm) {
+        font: 500 2rem/2.8rem var(--main-ff);
+        max-width: 80%;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    @include mq(xl) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    &-text {
+      font: var(--font-h5);
+      max-width: 110rem;
+    }
+  }
+
+  &__info {
+    max-width: 82.3rem;
+    padding: 2.5rem 2rem;
+    padding-top: 1.5rem;
+    color: var(--color-white);
+    background: rgba(16 50 62 / 60%);
+  }
+
+  &__heading {
+    font: var(--font-h2);
+  }
+
+  &__text {
+    max-width: 70.9rem;
+    font: var(--font-text-20-reg);
+  }
+
+  @include mq(xl) {
+    height: auto;
+    margin-top: 5rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-top: 5rem;
+  }
+
+  @include mq(sm) {
+    height: auto;
+    padding: 2.4rem;
+    border-radius: 0.8rem;
+    width: auto;
+    margin-left: calc(-1 * var(--content-padding));
+    margin-right: calc(-1 * var(--content-padding));
+    padding-right: var(--content-padding);
+    padding-left: var(--content-padding);
+  }
+}
