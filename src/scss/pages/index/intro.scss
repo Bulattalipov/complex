@@ -11,6 +11,46 @@
     min-height: 0;
   }
 
+  &--modif {
+    min-height: 130vh;
+
+    @include mq(xl) {
+      min-height: 100%;
+    }
+
+    .intro__inner {
+      padding-top: 0;
+      padding-bottom: 7rem;
+
+      @include mq(xl) {
+        padding-bottom: 0;
+      }
+    }
+
+    .intro__links {
+      font-weight: 400;
+
+      @include mq(xl) {
+        font-size: 2.4rem;
+        line-height: 1.4;
+        
+        &>* {
+          margin-bottom: 1rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      @include mq(sm) {
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        line-height: 1.4;
+      }
+    }
+  }
+
   &__inner {
     padding-top: 6rem;
 
@@ -62,8 +102,25 @@
   }
 
   &__title {
-    font: 700 6.4rem/1 var(--main-ff);
+    font: 700 6.4rem/1.4 var(--main-ff);
     max-width: 102.8rem;
+
+    @include mq(xl) {
+      max-width: 62rem;
+      font: 700 4.8rem/1.4 var(--main-ff);
+    }
+
+    @include mq(custom, max, 1024) {
+      font: 700 4rem/1.4 var(--main-ff);
+    }
+
+    @include mq(xxs) {
+      font: 700 3.6rem/1.4 var(--main-ff);
+    }
+
+    @include mq(custom, max, 370) {
+      font: 700 3.2rem/1.4 var(--main-ff);
+    }
   }
 
   &__content {
@@ -95,16 +152,44 @@
     max-width: 71.3rem;
     font: 400 3.2rem/1.2 var(--main-ff);
     margin-top: 7rem;
+
+    @include mq(xl) {
+      max-width: 65.8rem;
+      margin-top: 2rem;
+      font: 400 2.4rem/1.2 var(--main-ff);
+    }
+
+    @include mq(xxs) {
+
+    }
   }
 
   &__logo-wrapper {
     margin-bottom: 7rem;
     display: flex;
     align-items: flex-end;
+
+    @include mq(xl) {
+      margin-bottom: 3rem;
+    }
+
+    @include mq(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__logo {
     max-width: 47.8rem;
+
+    @include mq(xl) {
+      max-width: 36rem;
+    }
+
+    @include mq(md) {
+      margin-bottom: 2rem;
+      max-width: 20rem;
+    }
   }
 
   &__logo-link {
@@ -113,11 +198,28 @@
     color: rgba(255, 255, 255, 0.60);
     font: 400 2.4rem/1.2 var(--main-ff);
     text-decoration: underline;
+
+    @include mq(md) {
+      font: 400 1.5rem/1.2 var(--main-ff);
+    }
   }
 
   &__topic {
-    font: 400 3.6rem/1.2 var(--additional-ff);
     max-width: 118rem;
+    font: 400 3.6rem/1.2 var(--additional-ff);
+
+    @include mq(xl) {
+      max-width: 65.4rem;
+      font: 400 2.4rem/1.2 var(--additional-ff);
+    }
+
+    @include mq(md) {
+      font: 400 2rem/1.2 var(--additional-ff);
+    }
+
+    @include mq(xxs) {
+      font: 400 1.5rem/1.5 var(--additional-ff);
+    }
   }
   
   &__box-link {
@@ -126,6 +228,15 @@
     margin-top: 2.5rem;
     color: rgba(255, 255, 255, 0.60);
     text-decoration: underline;
+
+    @include mq(xl) {
+      font: 500 2rem/1.2 var(--main-ff);
+    }
+
+    @include mq(xxs) {
+      margin-top: 1.5rem;
+      font: 500 1.4rem/1.2 var(--main-ff);
+    }
   }
 
   &__links {
@@ -134,8 +245,10 @@
     align-items: flex-end;
     font: var(--font-text-20-md);
     text-align: right;
+    margin-top: 5rem;
 
     @include mq(md) {
+      margin-top: 0;
       align-items: flex-start;
       margin-top: var(--offset60);
       text-align: left;
@@ -166,43 +279,5 @@
     @include mq(md) {
       margin-top: 0;
     }
-  }
-
-  &__advantages-box {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 80rem;
-    display: flex;
-    align-items: center;
-    background-color: var(--color-white);
-    color: rgba(0, 0, 0, 0.80);
-    padding: 3.3rem 7.6rem 3.3rem 2.7rem;
-    font: 600 4rem/5.2rem var(--additional-ff);
-  }
-
-  &__advantages-box-list {
-    
-  }
-
-  &__advantages-box-item {
-    position: relative;
-    padding-left: 6.4rem;
-
-    &::before {
-      position: absolute;
-      top: 2.3rem;
-      left: 2.4rem;
-      width: 1.2rem;
-      height: 1.2rem;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.80);
-      content: '';
-    }
-  }
-
-  &__advantages-box-checked-icon{
-    width: 14.2rem;
-    height: 14.4rem;
   }
 }

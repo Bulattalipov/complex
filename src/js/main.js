@@ -16,6 +16,7 @@ import file from './modules/file';
 import projectContent from './modules/project-content';
 import landing from './modules/landing';
 import sliderSupplied from './modules/slider-supplied-equipment';
+import textHeightAlignment from './modules/text-height-alignment';
 
 documenReady(() => {
   window.complex_api = {};
@@ -35,4 +36,5 @@ documenReady(() => {
   projectContent();
   landing();
   sliderSupplied();
+  textHeightAlignment();
 });

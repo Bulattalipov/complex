@@ -1,4 +1,4 @@
-section.section.intro(style={"background-image": "url(assets/images/intro-block/poultry-farm.jpg)"})
+section.intro.intro--modif(style={"background-image": "url(assets/images/intro-block/poultry-farm.jpg)"})
   .top-offset
   +breadcrumbs([["Главная", "./"], ["Оборудование для птицефабрик"]])(class="breadcrumbs--white")
   .site-container
@@ -22,15 +22,15 @@ section.section.intro(style={"background-image": "url(assets/images/intro-block/
           a(href="/" class="intro__link-sbis")
             | Проверка на СБИС
             +icon-mono("link")(width="24" height="24")
-      .intro__advantages-box
-        ul.intro__advantages-box-list
-          li.intro__advantages-box-item
-            | Повышенная производительность птицефабрики
-          li.intro__advantages-box-item
-            | Ускоренный возврат инвестиций
-          li.intro__advantages-box-item
-            | Минимизация рисков
-        img.intro__advantages-box-checked-icon(src="assets/images/intro-block/checked.png" alt="alt")
+.equipment-advantages
+  ul.equipment-advantages__list
+    li.equipment-advantages__item
+      | Повышенная производительность птицефабрики
+    li.equipment-advantages__item
+      | Ускоренный возврат инвестиций
+    li.equipment-advantages__item
+      | Минимизация рисков
+  img.equipment-advantages__checked-icon(src="assets/images/intro-block/checked.png" alt="alt")
 
 section
   .site-container-2
@@ -45,25 +45,37 @@ section
               .supplied-equipment__item-box
                 h3.supplied-equipment__item-box-title
                   | Клетки для выращивания цыплят
-                button.supplied-equipment__item-box-link(data-path="modal") Подробнее
+                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
             li.swiper-slide.supplied-equipment__item
               img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-2.jpg" alt="alt")
               .supplied-equipment__item-box
                 h3.supplied-equipment__item-box-title
                   | Оборудование для родительского стада
-                button.supplied-equipment__item-box-link(data-path="modal") Подробнее
+                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
             li.swiper-slide.supplied-equipment__item
               img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
               .supplied-equipment__item-box
                 h3.supplied-equipment__item-box-title
                   | Секционные клетки для кур несушек 
-                button.supplied-equipment__item-box-link(data-path="modal") Подробнее
+                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
             li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-2.jpg" alt="alt")
+              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
               .supplied-equipment__item-box
                 h3.supplied-equipment__item-box-title
                   | Оборудование для родительского стада
-                button.supplied-equipment__item-box-link(data-path="modal") Подробнее
+                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
+            li.swiper-slide.supplied-equipment__item
+              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
+              .supplied-equipment__item-box
+                h3.supplied-equipment__item-box-title
+                  | Секционные клетки для кур несушек 
+                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
+            li.swiper-slide.supplied-equipment__item
+              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
+              .supplied-equipment__item-box
+                h3.supplied-equipment__item-box-title
+                  | Оборудование для родительского стада
+                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
         .supplied-equipment__swiper-navigation
           button.supplied-equipment__swiper-next
             img(src="assets/images/equipment/button-arrow.png" alt="alt")

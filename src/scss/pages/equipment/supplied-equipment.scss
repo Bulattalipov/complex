@@ -5,7 +5,13 @@
         margin-bottom: 5rem;
 
         @include mq(xl) {
-            font: 500 4rem/1 var(--main-ff);
+            max-width: 45rem;
+            font: 500 4rem/1.2 var(--main-ff);
+        }
+
+        @include mq(sm) {
+            font: 500 2.8rem/1.2 var(--main-ff);
+            margin-bottom: 4.3rem;
         }
     }
 
@@ -36,6 +42,7 @@
         width: 48.8rem;
         display: flex;
         align-items: flex-end;
+        overflow: hidden;
 
         @include mq(custom, max, 1400) {
             width: 35rem;
@@ -50,6 +57,17 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        &:hover {
+            .supplied-equipment__item-img {
+                transform: scale(1.1);
+            }
+
+            .supplied-equipment__item-box-link {
+                color: var(--color-hover-accent);
+            }
+
         }
     }
 
@@ -68,6 +86,7 @@
         height: 100%;
         object-fit: cover;
         z-index: -1;
+        transition: transform .3s;
     }
 
     &__item-box-title {
@@ -86,6 +105,7 @@
         font: 500 2.8rem/3.6rem var(--main-ff);
         color: rgba(255, 255, 255, 0.60);
         text-decoration: underline;
+        transition: color .3s;
 
         &::before {
             position: absolute;

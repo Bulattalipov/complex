@@ -15,8 +15,12 @@ export default function sliderSupplied() {
             speed: 500,
             slidesPerView: 1,
             spaceBetween: 40,
+            loop: true,
+            // loopAdditionalSlides: 10,
+            // loopSlides: 20,
+            loopedSlidesLimit: false,
             navigation: {
-            nextEl: slider.querySelector('.supplied-equipment__swiper-next'),
+                nextEl: slider.querySelector('.supplied-equipment__swiper-next'),
             //   prevEl: slider.querySelector('.slider-nav__prev')
             },
             breakpoints: {
