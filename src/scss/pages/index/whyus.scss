@@ -1,4 +1,10 @@
 .whyus {
+
+  &--modif {
+    .whyus__img-wrapper {
+      background-color: #16182F;
+    }
+  }
   
   &__heading {
     margin-bottom: var(--offset60);

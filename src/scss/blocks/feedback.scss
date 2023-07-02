@@ -75,7 +75,7 @@
     &:before {
       position: absolute;
       bottom: -27rem;
-      right: -40rem;
+      right: -51rem;
       width: 62.2rem;
       height: 85.4rem;
       background-image: url('../images/chickens.png');
@@ -97,6 +97,21 @@
 
     .form__btn {
       margin-top: 1rem;
+    }
+
+    .color {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0.3rem;
+        right: -2.4rem;
+        width: 1.5rem;
+        height: 1.4rem;
+        background-image: url('../images/clip.png');
+        background-size: cover;
+        content: '';
+      }
     }
   }
 }

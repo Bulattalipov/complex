@@ -15,8 +15,7 @@ import sliderSelection from './modules/sliderSelection';
 import file from './modules/file';
 import projectContent from './modules/project-content';
 import landing from './modules/landing';
-import sliderSupplied from './modules/slider-supplied-equipment';
-import textHeightAlignment from './modules/text-height-alignment';
+import fancyboxFunc from './modules/fancybox-func';
 
 documenReady(() => {
   window.complex_api = {};
@@ -35,6 +34,5 @@ documenReady(() => {
   file();
   projectContent();
   landing();
-  sliderSupplied();
-  textHeightAlignment();
+  fancyboxFunc();
 });

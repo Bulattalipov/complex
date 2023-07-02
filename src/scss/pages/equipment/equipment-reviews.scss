@@ -2,8 +2,20 @@
     display: flex;
     margin-bottom: 4.5rem;
 
+    border-radius: 3.2rem;
+    border: 0.1rem solid #9BA0AE;
+    padding: 4rem 10rem;
+
+    @include mq(xl) {
+        padding: 4rem;
+    }
+
+    @include mq(md) {
+        flex-direction: column;  
+    }
+
     @include mq(sm) {
-        flex-direction: column; 
+        padding: 3rem;
     }
 
     &__user {
@@ -26,11 +38,11 @@
 
     &__user-img {
         flex-shrink: 0;
-        width: 25.6rem;
-        height: 25.6rem;
+        width: 16rem;
+        height: 16rem;
         object-fit: cover;
         border-radius: 50%;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         @include mq(xl) {
             width: 14.8rem;
@@ -40,8 +52,8 @@
     }
 
     &__user-name {
-        font: 500 3.2rem/2.4rem var(--main-ff);
-        margin-bottom: 2rem;
+        font: 500 2.8rem/1.2 var(--main-ff);
+        margin-bottom: 2.2rem;
 
         @include mq(xl) {
             font: 500 2rem/1.1 var(--main-ff);
@@ -53,32 +65,34 @@
     &__user-phone,
     &__user-email {
         font: 400 2.2rem/1.1 var(--main-ff);
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
 
         @include mq(xl) {
             font: 400 1.6rem/1.1 var(--main-ff);
         }
     }
 
-    &__user-phone,
-    &__user-email {
-        text-decoration: underline;
-    }
-
     &__blockquote {
         position: relative;
-        font: 400 3.6rem/1.1 var(--main-ff);
+        font: 400 2.8rem/1.2 var(--main-ff);
+        margin-top: 6rem;
 
         @include mq(xl) {
             font: 400 2.4rem/1.1 var(--main-ff);
+            margin-top: 4rem;
+        }
+
+        @include mq(sm) {
+            margin-top: 1rem;
+            font: 400 2.2rem/1.1 var(--main-ff);
         }
 
         &::before {
             position: absolute;
-            top: -6.4rem;
+            top: -5.4rem;
             right: 0;
-            width: 8.4rem;
-            height: 8.1rem;
+            width: 6.5rem;
+            height: 6.2rem;
             background-image: url("../images/equipment/quotes.svg");
             background-size: cover;
             content: '';
@@ -86,10 +100,11 @@
             @include mq(xl) {
                 width: 5.1rem;
                 height: 4.8rem;
+                top: -4.3rem;
             }
 
             @include mq(sm) {
-                top: -4.7rem;
+                top: -4rem;
             }
         }
     }

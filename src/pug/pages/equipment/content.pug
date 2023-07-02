@@ -1,102 +1,74 @@
-section.intro.intro--modif(style={"background-image": "url(assets/images/intro-block/poultry-farm.jpg)"})
+section.section.intro.intro--modif(style={"background-image": "url(assets/images/intro-block/poultry-farm.jpg)"})
   .top-offset
   +breadcrumbs([["Главная", "./"], ["Оборудование для птицефабрик"]])(class="breadcrumbs--white")
   .site-container
-    h1.visually-hidden Оборудование для птицефабрик
     .intro__inner
       .intro__title Оборудование для птицефабрик
-      p.intro__desc
-        | современные решения для птицефабрик промышленного масштаба
       .intro__content
         .intro__box
-          .intro__logo-wrapper
-            img.intro__logo(src="assets/images/intro-block/logo-azim.png" alt="alt")
-            a.intro__logo-link(href="https://www.azim-tav.com.tr/") www.azim-tav.com
-          p.intro__topic
-            | Наш надежный партнёр - специализирующийся в проектировании и производстве современного оборудования для птицефабрик, работающих по методу “интенсивного хозяйства” 
-          a.intro__box-link(href="#")
-            | Подробнее
+          p.intro__desc
+            | Современные решения для птицефабрик промышленного масштаба
+          img.intro__logo(src="assets/images/intro-block/logo-azim.png" alt="alt")
+          .intro__shell
+            p.intro__shell-topic
+              | Наш надежный партнёр
+            a.intro__shell-link(href="https://www.azim-tav.com.tr/") www.azim-tav.com
         .intro__links
           a(href="mailto:order@compeq.ru") order@compeq.ru
           a(href="tel:+78007075705") 8 800 707-57-05
           a(href="/" class="intro__link-sbis")
             | Проверка на СБИС
             +icon-mono("link")(width="24" height="24")
-.equipment-advantages
-  ul.equipment-advantages__list
-    li.equipment-advantages__item
-      | Повышенная производительность птицефабрики
-    li.equipment-advantages__item
-      | Ускоренный возврат инвестиций
-    li.equipment-advantages__item
-      | Минимизация рисков
-  img.equipment-advantages__checked-icon(src="assets/images/intro-block/checked.png" alt="alt")
 
-section
-  .site-container-2
-    .supplied-equipment
-      h2.supplied-equipment__legend
-        | Поставляемое оборудование
-      .supplied-equipment__slider-wrapper
-        .supplied-equipment__slider
-          ul.supplied-equipment__list.swiper-wrapper
-            li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-1.jpg" alt="alt")
-              .supplied-equipment__item-box
-                h3.supplied-equipment__item-box-title
-                  | Клетки для выращивания цыплят
-                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
-            li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-2.jpg" alt="alt")
-              .supplied-equipment__item-box
-                h3.supplied-equipment__item-box-title
-                  | Оборудование для родительского стада
-                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
-            li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
-              .supplied-equipment__item-box
-                h3.supplied-equipment__item-box-title
-                  | Секционные клетки для кур несушек 
-                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
-            li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
-              .supplied-equipment__item-box
-                h3.supplied-equipment__item-box-title
-                  | Оборудование для родительского стада
-                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
-            li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
-              .supplied-equipment__item-box
-                h3.supplied-equipment__item-box-title
-                  | Секционные клетки для кур несушек 
-                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
-            li.swiper-slide.supplied-equipment__item
-              img.swiper-slide.supplied-equipment__item-img(src="assets/images/equipment/supplied-equipment-3.jpg" alt="alt")
-              .supplied-equipment__item-box
-                h3.supplied-equipment__item-box-title
-                  | Оборудование для родительского стада
-                button.supplied-equipment__item-box-link(data-path="modal-equipment") Подробнее
-        .supplied-equipment__swiper-navigation
-          button.supplied-equipment__swiper-next
-            img(src="assets/images/equipment/button-arrow.png" alt="alt")
-
-section
-  .site-container-2
-    .equipment-reviews 
-      .equipment-reviews__user
-        img.equipment-reviews__user-img(src="assets/images/equipment/user.jpg" alt="alt")
-        .equipment-reviews__user-name Королев Алексей
-        .equipment-reviews__user-post Инженер по продажам
-        a.equipment-reviews__user-phone(href="tel:+79274161526") +7 927 416 1526
-        a.equipment-reviews__user-email(href="mailto:alexey.korolev@complgroup.ru") alexey.korolev@complgroup.ru
-      blockquote.equipment-reviews__blockquote
-        | Комплексное оснащение - официальный партнер Azim-Tav. <br>
-        | На рынке с 2014 года. Имеем опыт работы с крупными <br>
-        | агрофирмами и птицефабриками, знаем их проблемы и решаем их. <br>
-        | Предоставляем гарантии из одних рук.
-      
 -
-  whywe_list = [
+  suppliedEquipment__list = [
+    {url: "supplied-equipment-1", text: "Клетки для выращивания цыплят"},
+    {url: "supplied-equipment-2", text: "Клетки секционные для кур несушек"},
+    {url: "supplied-equipment-3", text: "Оборудование для родительского стада"},
+    {url: "supplied-equipment-4", text: "Напольное выращивание цыплят-бройлеров"},
+    {url: "supplied-equipment-5", text: "Запчасти для обслуживания оборудования"},
+  ]
+
+section.section
+  .site-container
+    .supplied-equipment
+      .supplied-equipment__items
+        for elem in suppliedEquipment__list
+          .supplied-equipment__item
+            .supplied-equipment__item-box
+              img.supplied-equipment__item-box-img(src=`assets/images/equipment/${elem.url}.jpg` alt="alt")
+              .supplied-equipment__item-box-text= elem.text
+            .supplied-equipment__item-content
+              ul.supplied-equipment__item-content-list
+                li.supplied-equipment__item-content-elem
+                  | Секция
+                li.supplied-equipment__item-content-elem
+                  | Клетка
+                li.supplied-equipment__item-content-elem
+                  | Система кормления
+              button.button.supplied-equipment__item-btn(data-path="modal-equipment") Подробнее
+
+section.section
+  .site-container
+    .azim-equipment
+      a.azim-equipment__img-link(href="assets/images/equipment/document.jpg" data-fancybox="gallery")
+        img.azim-equipment__img(src="assets/images/equipment/document.jpg" alt="alt")
+      .azim-equipment__box
+        p.azim-equipment__box-text
+          | #[span Azim-Tav] - наш надежный партнёр, специализирующийся в проектировании и производстве современного оборудования для птицефабрик, работающих по методу “интенсивного хозяйства” 
+        .azim-equipment__content
+          img.azim-equipment__checked-icon(src="assets/images/intro-block/checked.png" alt="alt")
+          ul.azim-equipment__list
+            li.azim-equipment__item
+              | Повышенная производительность птицефабрики
+            li.azim-equipment__item
+              | Ускоренный возврат инвестиций
+            li.azim-equipment__item
+              | Минимизация рисков
+
+
+-
+  whyus_list = [
     { name: "Проектирование", icon: "why-we-1" },
     { name: "Монтаж  и пусконаладка ", icon: "why-we-2" },
     { name: "Поддержание склада и запасных частей", icon: "why-we-3" },
@@ -106,16 +78,31 @@ section
   ]
 
 section.section
-  .site-container-2
-    .why-we.why-we--modif
-      h2.why-we__heading
+  .site-container
+    .whyus.whyus--modif
+      h2.whyus__heading.site-second-heading
         | Почему именно  мы?
-      ul.why-we__list.grid-container
-        for item in whywe_list
-          li.why-we__item
-            .why-we__img-wrapper
-              img(src=`assets/images/equipment/${item.icon}.png` class="why-we__img" alt="")
-            .why-we__item-text!= item.name
+      ul.whyus__list.grid-container
+        for item in whyus_list
+          li.whyus__item
+            .whyus__img-wrapper
+              img(src=`assets/images/equipment/${item.icon}.png` class="whyus__img" alt="")
+            p!= item.name
+
+section.section
+  .site-container
+    .equipment-reviews 
+      .equipment-reviews__user
+        img.equipment-reviews__user-img(src="assets/images/equipment/user.jpg" alt="alt")
+        .equipment-reviews__user-name Королев Алексей
+        .equipment-reviews__user-post Инженер по продажам
+        a.equipment-reviews__user-phone(href="tel:+79274161526") +7 927 416 1526
+        a.equipment-reviews__user-email(href="mailto:alexey.korolev@complgroup.ru") alexey.korolev@complgroup.ru
+      blockquote.equipment-reviews__blockquote
+        | Комплексное оснащение - официальный партнер Azim-Tav. <br>
+        | На рынке с 2014 года. <br>
+        | Имеем опыт работы с крупными агрофирмами и птицефабриками, знаем <br>
+        | их проблемы и решаем их. Предоставляем гарантии из одних рук.
 
 section.section
   .site-container
