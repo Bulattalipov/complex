@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Описание сайта">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Инжиниринг и сервис | ООО «Комплексное оснащение»</title>
+    <link rel="stylesheet" href="assets/css/style.min.css?v=0.0.1.3">
+  </head>
+  <body class="page-home">
+    <div class="page-wrapper">
+
+      <header class="header">
+        <div class="site-container">
+          <a class="header__logo" href="./index.html">
+            <img src="assets/images/logo-white.svg" alt="Логотип компании">
+          </a>
+          <a class="header__logo header__logo--secondary" href="/">
+            <img src="assets/images/logo.svg" alt="Логотип компании">
+          </a>
+          <div class="header__nav-wrapper">
+            <button class="header__mobile-menu">Меню</button>
+            <nav class="nav header__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="./service.html">Сервис</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./engineering.html">Инжиниринг</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./delivery.html">Поставка оборудования</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./contacts.html">Контакты</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./about.html">О нас</a>
+                  <div class="dropdown">
+                    <div class="dropdown-content">
+                      <a class="dropdown-item" href="./news.html">Новости</a>
+                      <a class="dropdown-item" href="./partners.html">Партнеры</a>
+                      <a class="dropdown-item" href="./completed-projects.html">Реализованные проекты</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__catalog-btn">
+              <svg class="icon icon-menu-square header__catalog-btn-icon" width="24" height="24">
+                <use xlink:href="assets/images/sprites/sprite-mono.svg#menu-square"></use>
+              </svg>
+              <a href="./catalog.html">Каталог</a>
+              <div class="dropdown">
+                <div class="dropdown-content">
+                  <a class="dropdown-item" href="./news.html">Пароконденсатные системы</a>
+                  <a class="dropdown-item" href="./partners.html">Редукторы и мотор-редукторы</a>
+                  <a class="dropdown-item" href="./">Электродвигатели</a>
+                  <a class="dropdown-item" href="./">Приводные ремни и цепи</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="button button--accent header__btn" data-path="modal">Оставить заявку</button>
+        </div>
+      </header>
+      <div class="mobile-menu">
+        <div class="mobile-menu__content">
+          <button class="mobile-menu__close" aria-label="Закрыть меню">
+            <svg class="icon icon-close mobile-menu__close-icon" width="28" height="28">
+              <use xlink:href="assets/images/sprites/sprite-mono.svg#close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="./service.html">Инжиниринг и сервис</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./">Проектные решения</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./delivery.html">Поставка</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./about.html">О нас</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./news.html">Новости</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./partners.html">Партнеры</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="">Реализованные проекты</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="page-main main">
+        <div class="top-offset"></div>
+        <section class="section intro-page">
+          <div class="site-container">
+            <h1 class="site-second-heading intro-page__heading">Инжиниринг и сервис</h1>
+            <p class="intro-page__text">Мы не только поставляем, но и осуществляем сервисные и инжиниринговые услуги для промышленных и сельскохозяйственных предприятий</p>
+          </div>
+        </section>
+        <section class="section">
+          <div class="site-container">
+            <ul class="nav-cards grid-container">
+              <li class="nav-cards__item">
+                <article class="nav-card nav-card--icon-one">
+                  <img class="nav-card__img" src="assets/images/service/icon1.svg" alt="">
+                  <h3 class="nav-card__heading">Ремонт и обслуживание</h3>
+                  <ul class="nav-card__links">
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="./repair.html">Производственных линий</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="./repair.html">Промышленных насосов</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="./repair.html">Редукторов и мотор-редукторов</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="./repair.html">Прочего промышленного оборудования</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+              <li class="nav-cards__item">
+                <article class="nav-card nav-card--icon-two">
+                  <img class="nav-card__img" src="assets/images/service/icon2.svg" alt="">
+                  <h3 class="nav-card__heading">3D-моделирование и изготовление деталей</h3>
+                  <ul class="nav-card__links">
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="/">Печать на 3D-принтере</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="/">Пластиковые детали на станке ЧПУ</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="/">Несерийные металлоконструкции</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="/">Тефлорирование</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+              <li class="nav-cards__item">
+                <article class="nav-card nav-card--icon-three">
+                  <img class="nav-card__img" src="assets/images/service/icon3.svg" alt="">
+                  <h3 class="nav-card__heading">Выездные работы</h3>
+                  <ul class="nav-card__links">
+                    <li class="nav-card__link-item">
+                      <a class="nav-card__link" href="/">Монтаж, ремонт, пусконаладка, ППР, аварийные выезды или аварийная</a>
+                      <svg class="icon icon-link nav-card__link-icon" width="24" height="24">
+                        <use xlink:href="assets/images/sprites/sprite-mono.svg#link"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section">
+          <div class="site-container">
+            <h2 class="service-provider__heading">Все сервисные услуги педоставляются нашим сервисным подразделением ООО «Комплекс&nbsp;групп»</h2>
+            <div class="service-provider grid-container">
+              <div class="service-provider__image-wrapper">
+                <img src="assets/images/service/img1.jpg" alt="Электрогазосварщик варит трубу">
+              </div>
+              <div class="service-provider__col">
+                <div class="text-card">
+                  <p>Это 5 специалистов инжинирингового отдела, инженера-конструкторы, 16 специалистов для работы в производственно-ремонтном цеху и на выезде</p>
+                  <ul>
+                    <li>слесари-ремонтники 5 разряда;</li>
+                    <li>токарь-фрезеровщик</li>
+                    <li>электрогазосварщики</li>
+                    <li>оператор и наладчик станка с ЧПУ.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="site-container">
+            <div class="projects">
+              <div class="projects__heading-wrapper">
+                <h2 class="site-second-heading">Реализованные проекты</h2>
+                <a class="site-more-link" href="/"><span>Посмотреть все проекты</span>
+                </a>
+              </div>
+              <ul class="projects__list grid-container">
+                <li class="projects__item">
+                  <article class="project-card">
+                    <div class="project-card__img-wrapper">
+                      <img class="project-card__img" src="assets/images/project-card/img1.jpg" alt="">
+                    </div>
+                    <h3 class="project-card__heading">
+                      <a href="/">Проект реконструкции линий ООО «Агросила-Молоко»</a>
+                    </h3>
+                    <div class="project-card__txt">
+                      <p>Проект реконструкции линий, подбор и комплектация технологического оборудования. Цель реконструкции — приведение работы оборудования в соответствии с техническим регламентом и исключение гидроударов и влаги основных магистральных паропроводов.</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="projects__item">
+                  <article class="project-card">
+                    <div class="project-card__img-wrapper">
+                      <img class="project-card__img" src="assets/images/project-card/img2.jpg" alt="">
+                    </div>
+                    <h3 class="project-card__heading">
+                      <a href="/">Подбор промышленного мотор-редуктора Yilmaz для АО «Набережночелнинский Элеватор»</a>
+                    </h3>
+                    <div class="project-card__txt">
+                      <p>Подбор промышленного мотор-редуктора Yilmaz для АО «Набережночелнинский Элеватор».</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="projects__item">
+                  <article class="project-card">
+                    <div class="project-card__img-wrapper">
+                      <img class="project-card__img" src="assets/images/project-card/img3.jpg" alt="">
+                    </div>
+                    <h3 class="project-card__heading">
+                      <a href="/">Проект реконструкции цеха сыров ООО «Азбука Сыра»</a>
+                    </h3>
+                    <div class="project-card__txt">
+                      <p>Проект реконструкции цеха сыров: спроектирована система распределения пара и сбора конденсата с учётом технологических параметров оборудования. Исключены гидроудары и проблемы недогрева, связанные с недостатком пара.</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="site-container">
+            <div class="feedback">
+              <div class="feedback__block">
+                <h2 class="feedback__heading site-second-heading">Оставьте заявку, будьте&nbsp;на шаг впереди</h2>
+                <p class="feedback__text">На все обращения оперативно реагируют квалифицированные специалисты</p>
+              </div>
+              <div class="feedback__block">
+                <form class="form" data-need-validation>
+                  <div class="form__input-container">
+                    <div class="input__container">
+                      <label class="input__wrapper js-validation-wrapper">
+                        <input class="input" type="text" name="name" required placeholder="Имя">
+                        <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                        </svg><span class="input__label">Имя</span>
+                      </label>
+                    </div>
+                    <div class="input__container">
+                      <label class="input__wrapper js-validation-wrapper">
+                        <input class="input" type="email" name="email" data-parsley-email required placeholder="Email">
+                        <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                        </svg><span class="input__label">Email</span>
+                      </label>
+                    </div>
+                    <div class="input__container">
+                      <label class="input__wrapper js-validation-wrapper">
+                        <input class="input" type="text" name="question" required placeholder="Опишите запрос">
+                        <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                          <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                        </svg><span class="input__label">Опишите запрос</span>
+                      </label>
+                    </div>
+                    <label class="file js-file-upload" data-text="Прикрепить файл до 5Мб">
+                      <input class="visually-hidden" type="file" name="file"><span class="js-file-upload-text">Прикрепить файл &nbsp;<span class="color">до 5Мб</span>
+                      </span>
+                    </label>
+                  </div>
+                  <button class="button button--secondary form__btn">Отправить</button>
+                  <p class="form__agreeemnt">*нажимая отправить, вы соглашаетесь с&nbsp;<a href="/">условиями обработки персональных данных</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="site-container">
+          <div class="footer__top-block">
+            <div class="footer__nav">
+              <div class="footer__nav-item">
+                <a href="/">Инжиниринг и сервис</a>
+              </div>
+              <div class="footer__nav-item">
+                <a href="/">Поставки</a>
+              </div>
+              <div class="footer__nav-item">
+                <a href="/">Контакты</a>
+              </div>
+              <div class="footer__nav-item">
+                <a href="/">Проектные решения</a>
+              </div>
+              <div class="footer__nav-item">
+                <a href="/">О нас</a>
+              </div>
+            </div>
+            <div class="footer__main-links-wrapper">
+              <div class="footer__main-links">
+                <a class="footer__main-tel" href="tel:+78007075705">8 800 707-57-05</a>
+                <a class="footer__main-email" href="email:order@compeq.ru">order@compeq.ru</a>
+              </div>
+              <div class="footer__top-block-text">
+                <p class="footer__small-legend">РФ, РТ, Набережные Челны, ЗЯБ, ул.&nbsp;Хади&nbsp;Такташа,&nbsp;34а, строение&nbsp;2</p>
+                <p class="footer__small-legend">Принимаем заказы по всей<br>России с 9:00–20:00 без выходных</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom-block">
+            <div class="footer__bottom-block-links-wrapper">
+              <p class="footer__small-legend footer__bottom-block-links">© ООО «Комплексное оснащение»</p>
+              <a class="footer__small-legend footer__bottom-block-links" href="/">Карта сайта</a>
+              <a class="footer__small-legend footer__bottom-block-links" href="/">KORZILLA создание и продвижение сайтов</a>
+            </div>
+            <div class="footer__bottom-block-cities">
+              <a class="footer__cities-tel" href="tel:+79270345654" data-city="Казань" title="Телефон в Казани">+7 (927) 034-56-54</a>
+              <a class="footer__cities-tel" href="tel:+79270345654" data-city="Новосибирск" title="Телефон в Новосибирскe">+7 (927) 493-83-27</a>
+              <a class="footer__cities-tel" href="tel:+79270345654" data-city="Ульяновск" title="Телефон в Ульяновске">+7 (937) 522-80-32</a>
+              <a class="footer__cities-tel" href="tel:+79270345654" data-city="Екатеринбург" title="Телефон в Екатеринбурге">+7 (927) 044-40-59</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modal">
+      <div class="modal__container" data-target="modal">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Оставить заявку</div>
+          <form class="form form--modal" action="" data-need-validation enctype="multipart/form-data">
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="name" required placeholder="Имя">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Имя</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="email" name="email" data-parsley-email required placeholder="Email">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Email</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="phone" required placeholder="8-(800)-707-57-05">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Контактный телефон</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="inn" required placeholder="Имя">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">ИНН Организации</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="question" required placeholder="Опишите запрос">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Опишите запрос</span>
+              </label>
+            </div>
+            <label class="file js-file-upload" data-text="Прикрепить файл до 5Мб">
+              <input class="visually-hidden" type="file" name="file"><span class="js-file-upload-text">Прикрепить файл<span class="color">до 5Мб</span>
+              </span>
+            </label>
+            <button class="button button--accent form__btn form__btn--nomt">Отправить</button>
+            <p class="form__agreeemnt">*нажимая отправить, вы соглашаетесь с<a href="/">условиями обработки персональных данных</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="modal__container" data-target="modal-product">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Оставить заявку</div>
+          <form class="form form--modal" action="" data-need-validation enctype="multipart/form-data">
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="name" required placeholder="Имя">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Имя</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="email" name="email" data-parsley-email required placeholder="Email">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Email</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="phone" required placeholder="8-(800)-707-57-05">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Контактный телефон</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="inn" required placeholder="Имя">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">ИНН Организации</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="question" required placeholder="Комментарий">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Комментарий</span>
+              </label>
+            </div>
+            <label class="file js-file-upload" data-text="Прикрепить файл до 5Мб">
+              <input class="visually-hidden" type="file" name="file"><span class="js-file-upload-text">Прикрепить файл<span class="color">до 5Мб</span>
+              </span>
+            </label>
+            <button class="button button--accent form__btn form__btn--nomt">Отправить</button>
+            <p class="form__agreeemnt">*нажимая отправить, вы соглашаетесь с<a href="/">условиями обработки персональных данных</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="modal__container modal__container--type2" data-target="modal-product2">
+        <div class="modal__content">
+          <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+          </button>
+          <div class="modal__legend">Опросный лист на подбор редуктора</div>
+          <form class="form form--modal" action="" data-need-validation enctype="multipart/form-data">
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="name" required placeholder="Имя">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Имя</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="email" name="email" data-parsley-email required placeholder="Email">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Email</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="phone" required placeholder="8-(800)-707-57-05">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">Контактный телефон</span>
+              </label>
+            </div>
+            <div class="input__container">
+              <label class="input__wrapper input__wrapper--modal js-validation-wrapper">
+                <input class="input" type="text" name="inn" required placeholder="Имя">
+                <svg class="icon icon-alert input__error-icon" width="24" height="24">
+                  <use xlink:href="assets/images/sprites/sprite-multi.svg#alert"></use>
+                </svg><span class="input__label">ИНН Организации</span>
+              </label>
+            </div>
+            <div class="check--container">
+              <div class="modal-legend">1. Отрасль применения промышленности</div>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+            </div>
+            <div class="check--container">
+              <div class="modal-legend">2. Отрасль применения промышленности</div>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+            </div>
+            <div class="check--container">
+              <div class="modal-legend">3. Отрасль применения промышленности</div>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+            </div>
+            <div class="check--container">
+              <div class="modal-legend">4. Отрасль применения промышленности</div>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <div class="modal-legend-small">Краны</div>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+              <label class="check">
+                <input class="visually-hidden" type="checkbox" name="custom" value="Y"><span class="check__text">Механизмы лебедки (U)</span>
+              </label>
+            </div>
+            <label class="file js-file-upload" data-text="Прикрепить файл до 5Мб">
+              <input class="visually-hidden" type="file" name="file"><span class="js-file-upload-text">Прикрепить файл<span class="color">до 5Мб</span>
+              </span>
+            </label>
+            <button class="button button--accent form__btn form__btn--nomt">Отправить</button>
+            <p class="form__agreeemnt">*нажимая отправить, вы соглашаетесь с<a href="/">условиями обработки персональных данных</a>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="modal__container modal__container--type3" data-target="modal-equipment">
+        <button class="button-reset modal__close-btn modal-close" type="button"><span></span><span></span>
+        </button>
+        <div class="modal__content">
+          <div class="modal__legend">Секционные клетки</div>
+          <div class="modal__equipment-box-wrapper">
+            <div class="modal__equipment-box">
+              <div class="modal__equipment-slider-wrapper">
+                <div class="modal__equipment-slider">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal__equipment-slider-navigation">
+                  <div class="swiper-button-prev">
+                    <svg class="icon icon-arrow-left" width="12px" height="21">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next">
+                    <svg class="icon icon-arrow-left" width="12px" height="21">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__equipment-box-content">
+                <div class="modal__equipment-box-title">Секция</div>
+                <p class="modal__equipment-box-text">Секционные клетки V600, V625, V675 и Ѵ750 представляют собой клеточную систему, созданную с целью обеспечения Длительного срока службы и экономии площади. Все металлические части клетки оцинкованы и все проволочные Детали имеют горячее оцинкованное покрытие. С помощью этой системы количество треснувших и грязных яиц сводится к минимуму. Каждая клетка имеет 600 мм. ширину, фасад 600мм. 625мм. 675мм. 750мм. и высоту 590 мм.</p>
+              </div>
+            </div>
+            <div class="modal__equipment-box">
+              <div class="modal__equipment-slider-wrapper">
+                <div class="modal__equipment-slider">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal__equipment-slider-navigation">
+                  <div class="swiper-button-prev">
+                    <svg class="icon icon-arrow-left" width="12px" height="21">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next">
+                    <svg class="icon icon-arrow-left" width="12px" height="21">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__equipment-box-content">
+                <div class="modal__equipment-box-title">Секция</div>
+                <p class="modal__equipment-box-text">Секционные клетки V600, V625, V675 и Ѵ750 представляют собой клеточную систему, созданную с целью обеспечения Длительного срока службы и экономии площади. Все металлические части клетки оцинкованы и все проволочные Детали имеют горячее оцинкованное покрытие. С помощью этой системы количество треснувших и грязных яиц сводится к минимуму. Каждая клетка имеет 600 мм. ширину, фасад 600мм. 625мм. 675мм. 750мм. и высоту 590 мм.</p>
+              </div>
+            </div>
+            <div class="modal__equipment-box">
+              <div class="modal__equipment-slider-wrapper">
+                <div class="modal__equipment-slider">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                    <li class="swiper-slide">
+                      <img class="modal__equipment-slider-img" src="assets/images/equipment/section-cages-1.jpg" alt="alt">
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal__equipment-slider-navigation">
+                  <div class="swiper-button-prev">
+                    <svg class="icon icon-arrow-left" width="12px" height="21">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next">
+                    <svg class="icon icon-arrow-left" width="12px" height="21">
+                      <use xlink:href="assets/images/sprites/sprite-mono.svg#arrow-left"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__equipment-box-content">
+                <div class="modal__equipment-box-title">Секция</div>
+                <p class="modal__equipment-box-text">Секционные клетки V600, V625, V675 и Ѵ750 представляют собой клеточную систему, созданную с целью обеспечения Длительного срока службы и экономии площади. Все металлические части клетки оцинкованы и все проволочные Детали имеют горячее оцинкованное покрытие. С помощью этой системы количество треснувших и грязных яиц сводится к минимуму. Каждая клетка имеет 600 мм. ширину, фасад 600мм. 625мм. 675мм. 750мм. и высоту 590 мм.</p>
+              </div>
+            </div>
+          </div>
+          <div class="modal__equipment-size">
+            <div class="modal__equipment-size-title">Размеры клеток</div>
+            <div class="modal__equipment-size-images">
+              <img class="modal__equipment-size-image" src="assets/images/equipment/cell-sizes-1.jpg" alt="alt">
+              <img class="modal__equipment-size-image" src="assets/images/equipment/cell-sizes-2.jpg" alt="alt">
+              <img class="modal__equipment-size-image" src="assets/images/equipment/cell-sizes-3.jpg" alt="alt">
+            </div>
+          </div>
+          <button class="button modal__button" data-path="modal">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="assets/js/main.js?v=0.0.1.3"></script>
+  <script src="assets/js/backend.js?v=0.0.1.3"></script>
+</html>
