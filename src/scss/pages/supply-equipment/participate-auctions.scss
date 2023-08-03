@@ -1,0 +1,65 @@
+.participate-auctions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  margin-bottom: 2rem;
+
+  @include mq(custom, max, 1280) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  @include mq(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mq(sm) {
+    gap: 1rem;
+  }
+
+  &__content {
+    width: 64rem;
+
+    @include mq(custom, max, 1280) {
+      width: auto;
+    }
+
+    @include mq(lg) {
+      grid-column: span 2;
+    }
+  }
+
+  &__content-text {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.1;
+
+    @include mq(custom, max, 1280) {
+      font-size: 3.2rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2rem;
+    }
+  }
+
+  &__content-link {
+    display: block;
+    margin-top: 1rem;
+    color: #FF3342;
+    font-size: 2rem;
+    text-decoration: underline;
+
+    @include mq(xs) {
+      font-size: 1.2rem;
+    }
+  }
+
+  .specialists__list-item {
+    @include mq(custom, min, 1280) {
+      min-width: 36rem;
+    }
+  }
+}

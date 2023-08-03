@@ -1,0 +1,52 @@
+.terms-cooperation {
+  margin: 0 auto;
+  padding: 2rem 0 7rem;
+
+  &__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__desc {
+    font-size: 2rem;
+    max-width: 77.6rem;
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6rem;
+
+    @include mq(lg) {
+      gap: 3rem;
+    }
+
+    @include mq(md) {
+      overflow-x: auto;
+      margin: 0 calc(-1 * var(--content-padding));
+      padding: 0 calc(1 * var(--content-padding));
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__list-item-img {
+    flex-shrink: 0;
+    width: 11.3rem;
+    height: 9rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+
+    @include mq(lg) {
+      width: 8.3rem;
+      height: 6.7rem;
+    }
+  }
+
+  &__list-item-text {}
+}

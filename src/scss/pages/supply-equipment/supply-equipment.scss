@@ -1,0 +1,199 @@
+.supply-equipment {
+  padding-bottom: 5.7rem;
+
+  &__section {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: -18rem;
+    right: 0;
+    width: 124.8rem;
+    height: 93rem;
+    object-fit: cover;
+    z-index: -1;
+
+    @include mq(custom, max, 1280) {
+      width: 88.4rem;
+      height: 81.5rem;
+      right: -10rem;
+    }
+
+    @include mq(custom, max, 1024) {
+      display: none;
+    }
+  }
+
+  &__title {
+    max-width: 80rem;
+    font-weight: 600;
+    font-size: 9.6rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+
+    @include mq(lg) {
+      font-size: 7.6rem;
+    }
+
+    @include mq(sm) {
+      font-size: 4.8rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__desc {
+    max-width: 80.2rem;
+    font-size: 2rem;
+
+    @include mq(xs) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 4.3rem;
+    border-radius: 1rem;
+
+    @include mq(xs) {
+      width: 100%;
+      margin-top: 2.2rem;
+      padding: 1.2rem;
+      border-radius: 8rem;
+      text-align: center;
+    }
+  }
+
+  &__name {
+    margin-top: 7.4rem;
+    font-weight: 500;
+    font-size: 3.6rem;
+    margin-bottom: 2.8rem;
+
+    @include mq(sm) {
+      margin-top: 1.6rem;
+      font-size: 2.6rem;
+    }
+
+    @include mq(xs) {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__items {
+    max-width: 145.3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5.6rem;
+
+    @include mq(lg) {
+      gap: 2rem;
+    }
+
+    @include mq(sm) {
+      gap: 1rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 4rem 4rem;
+    border-radius: 3rem;
+    background: #FFF;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.07);
+    font-size: 1.6rem;
+
+    @include mq(custom, max, 1024) {
+      padding: 1.6rem 1.6rem 4rem;
+    }
+
+    @include mq(sm) {
+      font-size: 1.2rem;
+      padding: 1.6rem;
+      border-radius: 2rem;
+    }
+
+    @include mq(xs) {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      border-radius: 1rem;
+      padding: 1rem 1rem 2rem;
+    }
+  }
+
+  &__item-title {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    @include mq(sm) {
+      font-size: 1.6rem;
+      margin-bottom: 1.4rem;
+    }
+
+    @include mq(xs) {
+      font-size: 1.3rem;
+    }
+
+    &::before {
+      position: relative;
+      width: 2.8rem;
+      height: 4.1rem;
+      background-image: url('../images/supply-equipment/location.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 3rem;
+      content: '';
+
+      @include mq(sm) {
+        width: 1rem;
+        height: 1.4rem;
+        margin-right: 0.8rem;
+      }
+
+      @include mq(xs) {
+        width: 0.8rem;
+        height: 1.2rem;
+        margin-right: 0.4rem;
+      }
+    }
+  }
+
+  &__item-name {
+    margin-bottom: 0.7rem;
+
+    @include mq(sm) {
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &__item-phone {
+    color: #FF3342;
+    margin-bottom: 0.7rem;
+
+    @include mq(sm) {
+      margin-top: auto;
+      order: 1;
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-email {
+    text-decoration: underline;
+    word-break: break-word;
+    display: inline-block;
+
+    @include mq(sm) {
+      margin-bottom: 0.3rem;
+    }
+  }
+}

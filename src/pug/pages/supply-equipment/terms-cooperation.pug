@@ -1,0 +1,21 @@
+-
+  termsCooperationList = [
+    {url: "icon-1", text: "Поставки напрямую от производителя"},
+    {url: "icon-2", text: "Отсрочка платежа"},
+    {url: "icon-3", text: "Система скидок для  постоянных клиентов"},
+    {url: "icon-4", text: "Защита проекта "},
+    {url: "icon-5", text: "Бесплатная доставка  от 100 т.р."},
+    {url: "icon-6", text: "Техническое сопровождение "},
+  ]
+
+section
+  .site-container
+    .terms-cooperation
+      h2.terms-cooperation__title Условия сотрудничества
+      p.terms-cooperation__desc
+        | Наши клиенты получают отличные бонусы, как в долгосрочной перспективе сотрудничества, так и при первом контакте
+      ul.terms-cooperation__list
+        each item in termsCooperationList
+          li.terms-cooperation__list-item
+              img.terms-cooperation__list-item-img(src=`assets/images/terms-cooperation/${item.url}.svg` alt="")
+              .terms-cooperation__list-item-text= item.text
