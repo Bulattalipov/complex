@@ -81,9 +81,11 @@
   }
 
   &__list-item-title {
+    display: inline-block;
     font-weight: 600;
     font-size: 2rem;
     margin-bottom: 1rem;
+    line-height: 1.15;
 
     @include mq(xs) {
       font-size: 1.3rem;
