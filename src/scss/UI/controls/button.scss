@@ -54,4 +54,10 @@
   @include mq(lg) {
     padding: var(--offset12) var(--offset32);
   }
+
+  &--border {
+    background-color: var(--color-white);
+    border: 0.3rem solid #10323E;
+    color: #FF3342;
+  }
 }

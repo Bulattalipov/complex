@@ -1,0 +1,100 @@
+.motors-specialists {
+  &__title {
+    max-width: 64rem;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+
+    @include mq(sm) {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5.4rem;
+
+    @include mq(custom, max, 1400) {
+      gap: 3rem;
+    }
+
+    @include mq(xl) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include mq(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include mq(md) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem 1.4rem;
+    }
+  }
+
+  &__list-item-img-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 106%;
+    margin-bottom: 2rem;
+
+    @include mq(xs) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__list-item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__list-item-name {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.4rem;
+
+    @include mq(md) {
+      font-size: 2.4rem;
+    }
+
+    @include mq(xs) {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__list-item-spec {
+    font-size: 2rem;
+    color: #9BA0AE;
+    margin-bottom: 0.8rem;
+
+    @include mq(md) {
+      font-size: 1.7rem;
+    }
+
+    @include mq(xs) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__list-item-tel,
+  &__list-item-email {
+    display: inline-block;
+    font-size: 20px;
+
+    @include mq(md) {
+      font-size: 1.7rem;
+    }
+
+    @include mq(xs) {
+      font-size: 1.5rem;
+    }
+  }
+}
