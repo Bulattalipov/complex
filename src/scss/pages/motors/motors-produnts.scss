@@ -60,7 +60,7 @@
     }
 
     @include mq(xxs) {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -94,19 +94,6 @@
     object-fit: contain;
   }
 
-  &__list-item-button {
-    display: inline-block;
-    margin-top: 2.4rem;
-    align-self: center;
-    text-align: center;
-
-    @include mq(sm) {
-      margin-top: 1.4rem;
-      font-size: 1.6rem;
-      padding: 0.6rem;
-    }
-  }
-
   &__list-item-elements {
     display: flex;
     align-items: center;
@@ -114,16 +101,30 @@
     flex-wrap: wrap;
     gap: 1rem 1.8rem;
     margin-top: 1rem;
+    margin-bottom: 2.4rem;
     font-size: 1.5rem;
 
     @include mq(sm) {
       margin-top: 1.4rem;
       font-size: 1.4rem;
+      margin-bottom: 1.4rem;
     }
 
     @include mq(xxs) {
       font-size: 1.4rem;
       gap: 0.6rem 1rem;
+    }
+  }
+
+  &__list-item-button {
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    margin-top: auto;
+
+    @include mq(sm) {
+      font-size: 1.6rem;
+      padding: 0.6rem;
     }
   }
 }

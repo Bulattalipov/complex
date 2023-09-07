@@ -58,8 +58,22 @@
   &__logos {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    /* ie 10+ */
+    & {
+      -ms-overflow-style: none;
+    }
+
+    /* фф (свойство больше не работает, других способов тоже нет)*/
+    & {
+      overflow: -moz-scrollbars-none;
+    }
   }
 
   &__logo {
